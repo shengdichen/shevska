@@ -22,6 +22,9 @@ serifs = "sans"
     # capitals {{{
     capital-a = "straight-motion-serifed"
     capital-b = "standard-unilateral-motion-serifed"
+
+    capital-c = "unilateral-inward-serifed"
+
     capital-d = "more-rounded-unilateral-motion-serifed"
     capital-e = "motion-serifed"
     capital-f = "motion-serifed"
@@ -40,7 +43,14 @@ serifs = "sans"
     capital-p = "open"
     capital-q = "detached-oblique-tailed"
     capital-r = "curly-open-motion-serifed"
-    capital-s = "serifless"
+
+    # S {{{
+    # with a slight upper-right turn
+    capital-s = "unilateral-inward-serifed"
+
+    #       capital-s = "serifless"
+    # }}}
+
     capital-t = "standard"
     capital-u = "toothless-corner-unilateral-motion-serifed"
     capital-v = "straight-motion-serifed"
