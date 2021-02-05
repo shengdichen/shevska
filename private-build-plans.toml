@@ -197,14 +197,19 @@ serifs = "sans"
     # }}}
 
     one = "nobase-long-top-serif"
+
+    # the straights {{{
     two = "straight-neck"
+    six = "straight-bar"
+    nine = "straight-bar"
+    # }}}
+
     three = "flattop"
     four = "semi-open-non-crossing"
     five = "oblique-upper-left-bar"
-    six = "straight-bar"
     seven = "crossbar"
     eight = "two-circles"
-    nine = "straight-bar"
+
     # }}}
     # }}}
 
