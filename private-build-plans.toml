@@ -189,7 +189,13 @@ serifs = "sans"
     # }}}
 
     # numbers {{{
-    zero = "reverse-slashed"
+    # 0 {{{
+    # a more rounded 0, better distinguishable from O and o
+    zero = "reverse-slashed-oval"
+
+    #       zero = "reverse-slashed"
+    # }}}
+
     one = "nobase-long-top-serif"
     two = "straight-neck"
     three = "flattop"
