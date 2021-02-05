@@ -255,8 +255,13 @@ serifs = "sans"
     question = "corner-flat-hooked"
 
 
-    # zsh user-prompt
-    percent = "rings"
+    # percent, aka, the zsh user-prompt {{{
+    # a light connection between the slash and upper-left ring
+    percent = "rings-continuous-slash-also-connected"
+
+    #       percent = "rings-segmented-slash"
+    # }}}
+
     # [z|ba]sh root-prompt
     number-sign = "slanted-open"
     # }}}
