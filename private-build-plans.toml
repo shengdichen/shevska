@@ -196,7 +196,16 @@ serifs = "sans"
     #       zero = "reverse-slashed"
     # }}}
 
+    # 1 {{{
+    # a very pronounced, slanted hook
     one = "nobase-long-top-serif"
+
+    #       # a pixelated hook
+    #       #       possible confusion with:
+    #       #       1.  straight |l|
+    #       #       2.  upper-left hooked |l|
+    #       one = "nobase-flat-top-serif"
+    # }}}
 
     # the straights {{{
     two = "straight-neck"
