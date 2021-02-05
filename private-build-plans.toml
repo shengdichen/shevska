@@ -39,7 +39,15 @@ serifs = "sans"
 
     capital-l = "standard"
     capital-m = "hanging"
-    capital-n = "motion-serifed"
+
+    # N {{{
+    # the asymmetry works very well here
+    capital-n = "asymmetric-motion-serifed"
+
+    #       # the more traditional N
+    #       capital-n = "motion-serifed"
+    # }}}
+
     capital-p = "open"
     capital-q = "detached-oblique-tailed"
     capital-r = "curly-open-motion-serifed"
