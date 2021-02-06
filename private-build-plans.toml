@@ -256,9 +256,14 @@ serifs = "sans"
     three = "flattop"
     four = "semi-open-non-crossing"
     five = "oblique-upper-left-bar"
-    seven = "crossbar"
     eight = "two-circles"
 
+    # 7 {{{
+    # with a natural curve of the body
+    seven = "bend-crossbar"
+
+    #       seven = "crossbar"
+    # }}}
     # }}}
     # }}}
 
