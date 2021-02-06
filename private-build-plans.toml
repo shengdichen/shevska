@@ -72,7 +72,14 @@ serifs = "sans"
     # }}}
 
     capital-p = "open"
-    capital-q = "detached-oblique-tailed"
+
+    # Q {{{
+    capital-q = "detached-tailed"
+
+    #       # tail similar to tilde
+    #       capital-q = "detached-bend-tailed"
+    # }}}
+
     capital-r = "curly-open-motion-serifed"
 
     # S {{{
