@@ -60,7 +60,13 @@ serifs = "sans"
     capital-k = "curly"
     #       capital-k = "symmetric-disconnected-motion-serifed"
 
+    # L {{{
     capital-l = "standard"
+
+    #       # looks a bit too much
+    #       capital-l = "motion-serifed"
+    # }}}
+
     capital-m = "hanging"
 
     # N {{{
@@ -168,11 +174,17 @@ serifs = "sans"
     # upper-left, sharp tail
     l = "hooky"
 
+
     #       # bottom-right, sharp tail
     #       l = "hooky-bottom"
 
     #       # bottom-right, curved tail
     #       l = "tailed"
+
+
+    #       # just a straight line
+    #       #       dangerously similar to the pipeline |
+    #       l = "serifless"
     # }}}
 
     # m {{{
