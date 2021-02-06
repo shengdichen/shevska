@@ -39,11 +39,21 @@ serifs = "sans"
     capital-i = "serifed"
 
     # J {{{
-    # left serif only
-    capital-j = "serifed"
+    # elongated {{{
+    # a pronounced, hooked tail without any serif
+    capital-j = "descending-serifless"
+
+    #       # left serif only
+    #       capital-j = "descending-flat-hook-serifed"
+    # }}}
+
+    # normal {{{
+    #       # left serif only
+    #       capital-j = "serifed"
 
     #       # serif on both sides, more pronounced on the left
     #       capital-j = "serifed-both-sides"
+    # }}}
     # }}}
 
     # the curly k just looks right, both cap and non-cap
