@@ -21,7 +21,13 @@ serifs = "sans"
     # alphabets {{{
     # capitals {{{
     capital-a = "straight-motion-serifed"
-    capital-b = "standard-unilateral-motion-serifed"
+
+    # B {{{
+    # slight disconnection in the midddle
+    capital-b = "standard-interrupted-unilateral-motion-serifed"
+
+    #       capital-b = "standard-unilateral-motion-serifed"
+    # }}}
 
     capital-c = "unilateral-inward-serifed"
 
