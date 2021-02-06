@@ -69,7 +69,16 @@ serifs = "sans"
     capital-t = "standard"
     capital-u = "toothless-corner-unilateral-motion-serifed"
     capital-v = "straight-motion-serifed"
-    capital-w = "straight-double-v"
+
+    # W {{{
+    # the same DNA of double-v, but without the right-branch of the middle
+    # intersection
+    #       ->  looks less crowded than the double-v version
+    capital-w = "straight-asymmetric"
+
+    #       capital-w = "straight-double-v"
+    # }}}
+
     capital-x = "straight-motion-serifed"
 
     #       capital-y = "straight"
