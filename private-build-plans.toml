@@ -166,9 +166,15 @@ serifs = "sans"
 
     j = "flat-hook-serifless"
 
+    # k {{{
     #       # the curly k looks fuller
     #       k = "curly"
+
+    #       k = "symmetric-disconnected"
+
+    # cursively playful with no risk of being mistaken for |K|
     k = "cursive"
+    # }}}
 
     # l {{{
     # upper-left, sharp tail
