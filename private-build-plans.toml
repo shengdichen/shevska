@@ -148,11 +148,11 @@ serifs = "sans"
     #       # diagonally-upwards pointing tail
     #       i = "diagonal-tailed"
 
-    # rounded tail
-    i = "tailed"
+    #       # rounded tail
+    #       i = "tailed"
 
-    #       # more subdued, rounded tail
-    #       i = "flat-tailed"
+    # more subdued, rounded tail
+    i = "flat-tailed"
     # }}}
 
     #       # lower-right, sharp tail
