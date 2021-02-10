@@ -255,10 +255,10 @@ serifs = "sans"
 
     # numbers {{{
     # 0 {{{
-    # a more rounded 0, better distinguishable from O and o
-    zero = "reverse-slashed-oval"
+    #       # a more rounded 0, better distinguishable from O and o
+    #       zero = "reverse-slashed-oval"
 
-    #       zero = "reverse-slashed"
+    zero = "reverse-slashed"
     # }}}
 
     # 1 {{{
