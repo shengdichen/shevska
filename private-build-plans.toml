@@ -245,14 +245,27 @@ serifs = "sans"
     # misc {{{
     eszet = "traditional"
 
-    # non-cap lambda
-    lambda = "straight"
+    # Greek {{{
+    lower-alpha = "crossing"
 
-    # Capital-Lambda, Capital-Delta
+    capital-gamma = "motion-serifed"
+
+    latn-epsilon = "serifless"
+    latn-reverse-epsilon = "serifless"
+
+    lower-iota = "serifed-flat-tailed"
+
+    # Lambda {{{
+    # Capital-Lambda
     turn-v = "straight"
 
     # Cryllic Capital-U
     cyrl-capital-u = "curly"
+    # non-cap lambda
+    lower-lambda = "straight-turn"
+    # }}}
+    # }}}
+
     # }}}
     # }}}
 
