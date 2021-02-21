@@ -56,9 +56,12 @@ serifs = "sans"
     # }}}
     # }}}
 
+    # K {{{
     # the curly k just looks right, both cap and non-cap
     capital-k = "curly"
+
     #       capital-k = "symmetric-disconnected-motion-serifed"
+    # }}}
 
     # L {{{
     capital-l = "standard"
