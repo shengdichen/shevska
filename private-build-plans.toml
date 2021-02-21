@@ -259,13 +259,18 @@ serifs = "sans"
     # Capital-Lambda
     turn-v = "straight"
 
-    # Cryllic Capital-U
-    cyrl-capital-u = "curly"
     # non-cap lambda
     lower-lambda = "straight-turn"
     # }}}
     # }}}
 
+    # cryllic {{{
+    cyrl-ka = "symmetric-connected-motion-serifed"
+
+    # to distinguish between the English |Y| with shape similar to the English
+    # |y| and tail similar to |g|
+    cyrl-capital-u = "cursive-flat-hook"
+    # }}}
     # }}}
     # }}}
 
