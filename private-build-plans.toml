@@ -40,10 +40,10 @@ serifs = "sans"
 
     capital-c = "unilateral-inward-serifed"
 
-    capital-e = "motion-serifed"
-    capital-f = "motion-serifed"
     capital-g = "toothless-corner-serifless-hookless"
     capital-h = "standard"
+    capital-e = "top-left-serifed"
+    capital-f = "top-left-serifed"
     capital-i = "serifed"
 
     # J {{{
