@@ -127,7 +127,7 @@ serifs = "sans"
 
     # UVW {{{
     #       capital-u = "toothless-corner-unilateral-motion-serifed"
-    capital-u = "toothless-corner"
+    capital-u = "toothless-corner-serifless"
 
     capital-v = "straight-motion-serifed"
 
@@ -139,7 +139,7 @@ serifs = "sans"
 
     #       capital-w = "straight-double-v"
 
-    capital-w = "curly"
+    capital-w = "curly-serifless"
     # }}}
     # }}}
 
@@ -163,7 +163,7 @@ serifs = "sans"
     # non-caps {{{
     a = "double-storey-toothless-corner"
 
-    b = "toothless-corner"
+    b = "toothless-corner-serifless"
     d = "toothless-corner-serifless"
 
     e = "rounded"
@@ -171,8 +171,8 @@ serifs = "sans"
     # extended tail and elevated crossbar for the ultimate gothic look
     f = "flat-hook-extended-crossbar-at-x-height"
 
-    g = "single-storey-earless-corner-flat-hook"
-    h = "straight"
+    g = "single-storey-flat-hook-earless-corner"
+    h = "straight-serifless"
 
     # i {{{
     # upper-left {{{
@@ -247,7 +247,7 @@ serifs = "sans"
 
     # m {{{
     # one single continuous arch (perfect symmetry)
-    m = "earless-single-arch-short-leg"
+    m = "earless-single-arch-short-leg-serifless"
 
     #       # two joint arches, cornered upper-left
     #       m = "earless-corner-double-arch-shortleg"
@@ -264,12 +264,12 @@ serifs = "sans"
 
     # cornered, upper-left
     #       a bit more pronounced upper-left
-    n = "earless-corner-straight"
+    n = "earless-corner-straight-serifless"
     # }}}
 
-    p = "earless-corner"
-    q = "earless-corner"
-    r = "compact"
+    p = "earless-corner-serifless"
+    q = "earless-corner-straight-serifless"
+    r = "compact-serifless"
 
     # t {{{
     #       t = "hookless-asymmetric"
@@ -281,21 +281,21 @@ serifs = "sans"
     # cornered, lower-right
     #       the extra assymetry with the cornered lower-right distinguishes
     #       from "v"
-    u = "toothless-corner"
+    u = "toothless-corner-serifless"
 
     # |v| and |w| should display pairwise distinguishing styles
     #       v = "straight"
     #       w = "curly"
 
-    v = "curly"
+    v = "curly-serifless"
     #       w = "straight"
-    w = "straight-vertical-sides"
+    w = "straight-vertical-sides-serifless"
     # }}}
 
     x = "straight-serifless"
     # y {{{
     #       y = "curly"
-    y = "straight-turn"
+    y = "straight-turn-serifless"
     # }}}
 
     # z {{{
@@ -331,7 +331,7 @@ serifs = "sans"
 
     # to distinguish between the English |Y| with shape similar to the English
     # |y| and tail similar to |g|
-    cyrl-capital-u = "cursive-flat-hook"
+    cyrl-capital-u = "cursive-flat-hook-serifless"
     # }}}
     # }}}
     # }}}
@@ -339,7 +339,7 @@ serifs = "sans"
     # numbers {{{
     # 0 {{{
     # a more rounded 0, better distinguishable from O and o
-    zero = "reverse-slashed-oval"
+    zero = "oval-reverse-slashed"
 
     #       zero = "reverse-slashed"
     # }}}
@@ -372,7 +372,7 @@ serifs = "sans"
 
     #       seven = "curly-crossbar"
 
-    seven = "straight-crossbar"
+    seven = "straight-serifless-crossbar"
     # }}}
     # }}}
     # }}}
@@ -380,7 +380,7 @@ serifs = "sans"
     # symbols {{{
     # dev {{{
     ampersand = "upper-open"
-    asterisk = "flip-penta-low"
+    asterisk = "turn-penta-low"
 
     # "()" {{{
     paren = "normal"
@@ -411,7 +411,7 @@ serifs = "sans"
     bar = "force-upright"
 
     #       at = "threefold"
-    at = "short"
+    at = "compact"
 
     # regards from Regex
     question = "corner-flat-hooked"
@@ -429,7 +429,7 @@ serifs = "sans"
     # }}}
 
     # niche {{{
-    paragraph-sign = "low"
+    pilcrow = "low"
     ascii-grave = "straight"
     caret = "high"
 
