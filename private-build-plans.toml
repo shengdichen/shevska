@@ -312,10 +312,10 @@ serifs = "sans"
     # Greek {{{
     lower-alpha = "crossing"
 
-    capital-gamma = "motion-serifed"
+    capital-gamma = "top-right-serifed"
 
-    latn-epsilon = "serifless"
-    latn-reverse-epsilon = "serifless"
+    #latn-epsilon = "serifless"
+    #latn-reverse-epsilon = "serifless"
 
     lower-iota = "serifed-flat-tailed"
 
@@ -329,7 +329,7 @@ serifs = "sans"
     # }}}
 
     # cryllic {{{
-    cyrl-ka = "symmetric-connected-motion-serifed"
+    #cyrl-ka = "symmetric-connected-motion-serifed"
 
     # to distinguish between the English |Y| with shape similar to the English
     # |y| and tail similar to |g|
