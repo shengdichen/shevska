@@ -11,237 +11,234 @@ family = "Shevska"
 spacing = "normal"
 serifs = "sans"
 
-  # glyphs for the three different Slopes (Upright, Italic, Oblique) {{{
-  [buildPlans.shevska.variants]
+[buildPlans.shevska.variants.design]
+# alpha-numberics {{{
+# alphabets {{{
+diacritic-dot = "square"
 
-    [buildPlans.shevska.variants.design]
-    # alpha-numberics {{{
-    # alphabets {{{
-    diacritic-dot = "square"
+# latin {{{
+# majuscule {{{
+capital-a = "straight-top-serifed"
 
-    # latin {{{
-    # majuscule {{{
-    capital-a = "straight-top-serifed"
+# slight disconnection in the midddle
+capital-b = "standard-interrupted-unilateral-serifed"
+# use symmetrical serif in contrast to B
+capital-d = "more-rounded-bilateral-serifed"
 
-    # slight disconnection in the midddle
-    capital-b = "standard-interrupted-unilateral-serifed"
-    # use symmetrical serif in contrast to B
-    capital-d = "more-rounded-bilateral-serifed"
+capital-c = "unilateral-inward-serifed"
 
-    capital-c = "unilateral-inward-serifed"
+capital-e = "top-left-serifed"
+capital-f = "top-left-serifed"
 
-    capital-e = "top-left-serifed"
-    capital-f = "top-left-serifed"
+# avoid similarity with C
+capital-g = "toothless-corner-serifless-hooked"
 
-    # avoid similarity with C
-    capital-g = "toothless-corner-serifless-hooked"
+capital-h = "serifless"
+capital-i = "serifed"
 
-    capital-h = "serifless"
-    capital-i = "serifed"
+# elongated with a pronounced, hooked tail sans serif
+capital-j = "descending-serifless"
 
-    # elongated with a pronounced, hooked tail sans serif
-    capital-j = "descending-serifless"
+# curly with a light foot
+capital-k = "curly-bottom-right-serifed"
 
-    # curly with a light foot
-    capital-k = "curly-bottom-right-serifed"
+capital-m = "slanted-sides-hanging-motion-serifed"
+capital-n = "asymmetric-motion-serifed"
 
-    capital-m = "slanted-sides-hanging-motion-serifed"
-    capital-n = "asymmetric-motion-serifed"
+capital-p = "open-motion-serifed"
+capital-r = "standing-open-motion-serifed"
 
-    capital-p = "open-motion-serifed"
-    capital-r = "standing-open-motion-serifed"
+capital-q = "detached-tailed"
 
-    capital-q = "detached-tailed"
+# with a slight upper-right bend
+capital-s = "unilateral-inward-serifed"
 
-    # with a slight upper-right bend
-    capital-s = "unilateral-inward-serifed"
+capital-t = "serifless"
 
-    capital-t = "serifless"
+capital-u = "toothed-serifless"
+capital-v = "straight-motion-serifed"
+capital-w = "curly-serifless"
 
-    capital-u = "toothed-serifless"
-    capital-v = "straight-motion-serifed"
-    capital-w = "curly-serifless"
+capital-x = "straight-motion-serifed"
 
-    capital-x = "straight-motion-serifed"
+capital-y = "straight-serifless"
+capital-z = "straight-top-serifed-with-horizontal-crossbar"
+# }}}
 
-    capital-y = "straight-serifless"
-    capital-z = "straight-top-serifed-with-horizontal-crossbar"
-    # }}}
+# minuscule {{{
+a = "double-storey-toothless-corner"
 
-    # minuscule {{{
-    a = "double-storey-toothless-corner"
+b = "toothless-corner-serifless"
+d = "toothless-corner-serifless"
 
-    b = "toothless-corner-serifless"
-    d = "toothless-corner-serifless"
+e = "rounded"
 
-    e = "rounded"
+# extended tail and elevated crossbar for the ultimate gothic look
+f = "flat-hook-extended-crossbar-at-x-height"
 
-    # extended tail and elevated crossbar for the ultimate gothic look
-    f = "flat-hook-extended-crossbar-at-x-height"
+g = "single-storey-flat-hook-earless-corner"
+h = "straight-serifless"
 
-    g = "single-storey-flat-hook-earless-corner"
-    h = "straight-serifless"
+i = "hooky"
 
-    i = "hooky"
+j = "flat-hook-serifless"
+k = "symmetric-touching-serifless"
 
-    j = "flat-hook-serifless"
-    k = "symmetric-touching-serifless"
+l = "hooky"
 
-    l = "hooky"
+# one single continuous arch (perfect symmetry)
+m = "earless-single-arch-short-leg-serifless"
 
-    # one single continuous arch (perfect symmetry)
-    m = "earless-single-arch-short-leg-serifless"
+# cornered, upper-left
+n = "earless-corner-straight-serifless"
 
-    # cornered, upper-left
-    n = "earless-corner-straight-serifless"
+p = "earless-corner-serifless"
+q = "earless-corner-straight-serifless"
+r = "compact-serifless"
 
-    p = "earless-corner-serifless"
-    q = "earless-corner-straight-serifless"
-    r = "compact-serifless"
+t = "hookless-asymmetric-short-neck"
 
-    t = "hookless-asymmetric-short-neck"
+u = "toothless-corner-serifless"
 
-    u = "toothless-corner-serifless"
+# pairwise distinguishing styles for |v| and |w|
+v = "curly-serifless"
+w = "straight-vertical-sides-serifless"
 
-    # pairwise distinguishing styles for |v| and |w|
-    v = "curly-serifless"
-    w = "straight-vertical-sides-serifless"
+x = "straight-serifless"
+y = "straight-turn-serifless"
 
-    x = "straight-serifless"
-    y = "straight-turn-serifless"
+z = "straight-serifless-with-crossbar"
+# }}}
+# }}}
 
-    z = "straight-serifless-with-crossbar"
-    # }}}
-    # }}}
+eszet = "traditional"
 
-    eszet = "traditional"
+# Greek {{{
+# majuscule lambda & majuscule delta
+turn-v = "straight"
+# minuscule lambda
+lower-lambda = "straight-turn"
 
-    # Greek {{{
-    # majuscule lambda & majuscule delta
-    turn-v = "straight"
-    # minuscule lambda
-    lower-lambda = "straight-turn"
+lower-alpha = "crossing"
+lower-delta = "flat-top"
+capital-gamma = "top-right-serifed"
+lower-xi = "flat-top"
+lower-mu = "toothed-serifless"
+lower-iota = "serifed-diagonal-tailed"
+# }}}
 
-    lower-alpha = "crossing"
-    lower-delta = "flat-top"
-    capital-gamma = "top-right-serifed"
-    lower-xi = "flat-top"
-    lower-mu = "toothed-serifless"
-    lower-iota = "serifed-diagonal-tailed"
-    # }}}
+# cryllic {{{
+cyrl-capital-zhe = "symmetric-connected"
+cyrl-zhe = "curly"
+cyrl-capital-ka = "symmetric-touching-top-left-serifed"
+cyrl-ka = "curly-serifless"
+cyrl-capital-ya = "standing-open-serifless"
+cyrl-ya = "straight-open-serifless"
 
-    # cryllic {{{
-    cyrl-capital-zhe = "symmetric-connected"
-    cyrl-zhe = "curly"
-    cyrl-capital-ka = "symmetric-touching-top-left-serifed"
-    cyrl-ka = "curly-serifless"
-    cyrl-capital-ya = "standing-open-serifless"
-    cyrl-ya = "straight-open-serifless"
+cyrl-capital-ze = "unilateral-inward-serifed"
+cyrl-ze = "serifless"
 
-    cyrl-capital-ze = "unilateral-inward-serifed"
-    cyrl-ze = "serifless"
+cyrl-yeri = "round"
+cyrl-yery = "cursive"
 
-    cyrl-yeri = "round"
-    cyrl-yery = "cursive"
+cyrl-el = "straight"
+cyrl-em = "hanging-serifless"
+cyrl-en = "serifless"
 
-    cyrl-el = "straight"
-    cyrl-em = "hanging-serifless"
-    cyrl-en = "serifless"
+cyrl-ef = "serifless"
+cyrl-che = "standard"
+cyrl-capital-u = "cursive-serifless"
+# }}}
+# }}}
 
-    cyrl-ef = "serifless"
-    cyrl-che = "standard"
-    cyrl-capital-u = "cursive-serifless"
-    # }}}
-    # }}}
+# numbers {{{
+zero = "oval-reverse-slashed"
 
-    # numbers {{{
-    zero = "oval-reverse-slashed"
+# a very pronounced, slanted hook
+one = "no-base-long-top-serif"
 
-    # a very pronounced, slanted hook
-    one = "no-base-long-top-serif"
+# straight neck
+two = "straight-neck"
+six = "straight-bar"
+nine = "straight-bar"
 
-    # straight neck
-    two = "straight-neck"
-    six = "straight-bar"
-    nine = "straight-bar"
+three = "flat-top"
+four = "semi-open-non-crossing"
+five = "oblique-upper-left-bar"
+eight = "crossing-asymmetric"
 
-    three = "flat-top"
-    four = "semi-open-non-crossing"
-    five = "oblique-upper-left-bar"
-    eight = "crossing-asymmetric"
+seven = "straight-serifless-crossbar"
+# }}}
+# }}}
 
-    seven = "straight-serifless-crossbar"
-    # }}}
-    # }}}
+# symbols {{{
+punctuation-dot = "square"
+# descend to simulate space
+underscore = "low"
 
-    # symbols {{{
-    punctuation-dot = "square"
-    # descend to simulate space
-    underscore = "low"
+# dev {{{
+ampersand = "upper-open"
+asterisk = "turn-penta-low"
 
-    # dev {{{
-    ampersand = "upper-open"
-    asterisk = "turn-penta-low"
+# ()
+paren = "normal"
+# {}
+brace = "curly-flat-boundary"
 
-    # ()
-    paren = "normal"
-    # {}
-    brace = "curly-flat-boundary"
+tilde = "low"
 
-    tilde = "low"
+caret = "high"
+dollar = "interrupted"
+percent = "rings-continuous-slash-also-connected"
+number-sign = "slanted-open"
 
-    caret = "high"
-    dollar = "interrupted"
-    percent = "rings-continuous-slash-also-connected"
-    number-sign = "slanted-open"
+# elevated comma
+#   ->  clearly distinguishable between backquote and double quotes
+ascii-single-quote = "raised-comma"
 
-    # elevated comma
-    #   ->  clearly distinguishable between backquote and double quotes
-    ascii-single-quote = "raised-comma"
+bar = "force-upright"
+# }}}
 
-    bar = "force-upright"
-    # }}}
+at = "compact"
+question = "corner-flat-hooked"
+# backtick
+ascii-grave = "straight"
 
-    at = "compact"
-    question = "corner-flat-hooked"
-    # backtick
-    ascii-grave = "straight"
+# misc {{{
+cent = "open"
+partial-derivative = "curly-bar"
+lower-eth = "straight-bar"
+micro-sign = "tailed-serifless"
 
-    # misc {{{
-    cent = "open"
-    partial-derivative = "curly-bar"
-    lower-eth = "straight-bar"
-    micro-sign = "tailed-serifless"
+# paragraph-indicator
+pilcrow = "low"
+# }}}
+# }}}
 
-    # paragraph-indicator
-    pilcrow = "low"
-    # }}}
-    # }}}
+# ligatures {{{
+# leq, geq
+lig-ltgteq = "flat"
+# !=
+lig-neq = "vertical-dotted"
+# ==
+lig-equal-chain = "with-notch"
+# --
+lig-hyphen-chain = "with-notch"
+# =>
+lig-double-arrow-bar = "with-notch"
+# ->
+lig-single-arrow-bar = "without-notch"
 
-  # ligatures {{{
-    # leq, geq
-    lig-ltgteq = "flat"
-    # !=
-    lig-neq = "vertical-dotted"
-    # ==
-    lig-equal-chain = "with-notch"
-    # --
-    lig-hyphen-chain = "with-notch"
-    # =>
-    lig-double-arrow-bar = "with-notch"
-    # ->
-    lig-single-arrow-bar = "without-notch"
+[buildPlans.shevska.ligations]
+#     inherits = "default-calt"
 
-  [buildPlans.shevska.ligations]
-  #     inherits = "default-calt"
+#     # discretionary ligatures
+#     inherits = "dlig"
 
-  #     # discretionary ligatures
-  #     inherits = "dlig"
+enables = ["center-ops", "arrow", "arrow2", "trig", "eqeqeq", "eqeq", "ineq", "exeqeq", "exeqeq-dotted", "eqexeq", "eqexeq-dotted", "eqexeq-dl", "eqexeq-dl-dotted", "exeq", "exeq-dotted", "tildeeq", "eqslasheq", "slasheq", "ltgt-ne", "ltgt-diamond", "brst", "plusplus", "kern-dotty", "logic", "llgg", "llggeq", "dot-as-operator", "lteq-as-arrow", "gteq-as-co-arrow", "html-comment", "colon-greater-as-colon-arrow", "brace-bar", "brack-bar"]
 
-  enables = ["center-ops", "arrow", "arrow2", "trig", "eqeqeq", "eqeq", "ineq", "exeqeq", "exeqeq-dotted", "eqexeq", "eqexeq-dotted", "eqexeq-dl", "eqexeq-dl-dotted", "exeq", "exeq-dotted", "tildeeq", "eqslasheq", "slasheq", "ltgt-ne", "ltgt-diamond", "brst", "plusplus", "kern-dotty", "logic", "llgg", "llggeq", "dot-as-operator", "lteq-as-arrow", "gteq-as-co-arrow", "html-comment", "colon-greater-as-colon-arrow", "brace-bar", "brack-bar"]
-
-  disables = []
-  # }}}
+disables = []
+# }}}
 
 # what to build {{{
 # weight {{{
