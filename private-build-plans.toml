@@ -329,9 +329,7 @@ serifs = "sans"
     # cryllic {{{
     #cyrl-ka = "symmetric-connected-motion-serifed"
 
-    # to distinguish between the English |Y| with shape similar to the English
-    # |y| and tail similar to |g|
-    cyrl-capital-u = "cursive-flat-hook-serifless"
+    cyrl-capital-u = "cursive-serifless"
     # }}}
     # }}}
     # }}}
