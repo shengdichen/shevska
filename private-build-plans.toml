@@ -127,7 +127,7 @@ serifs = "sans"
 
     # UVW {{{
     #       capital-u = "toothless-corner-unilateral-motion-serifed"
-    capital-u = "toothless-corner-serifless"
+    capital-u = "toothed-serifless"
 
     capital-v = "straight-motion-serifed"
 
