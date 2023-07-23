@@ -238,6 +238,9 @@ serifs = "sans"
     #       # bottom-right, curved tail
     #       l = "tailed"
 
+    #       # bottom-right, subdued tail
+    #       l = "tailed"
+
 
     #       # just a straight line
     #       #       dangerously similar to the pipeline |
@@ -257,19 +260,24 @@ serifs = "sans"
     # }}}
 
     # n {{{
-    # rounded, upper-left (perfect symmetry)
-    #       greater clearity in upper-left, since rounded
-    n = "earless-rounded-straight"
+    #       # rounded, upper-left (perfect symmetry)
+    #       #       greater clearity in upper-left, since rounded
+    #       n = "earless-rounded-straight"
 
-    #       # cornered, upper-left
-    #       #       a bit more pronounced upper-left
-    #       n = "earless-corner-straight"
+    # cornered, upper-left
+    #       a bit more pronounced upper-left
+    n = "earless-corner-straight"
     # }}}
 
     p = "earless-corner"
     q = "earless-corner"
     r = "compact"
-    t = "hookless-asymmetric"
+
+    # t {{{
+    #       t = "hookless-asymmetric"
+    t = "hookless-asymmetric-short-neck"
+    #       t = "hookless-asymmetric-short-neck2"
+    # }}}
 
     # uvw {{{
     # cornered, lower-right
