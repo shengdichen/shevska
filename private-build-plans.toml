@@ -510,35 +510,10 @@ menu = 741
 css = 741
 # }}}
 
-# width {{{
-# default {{{
-#       [buildPlans.shevska.widths.normal]
-#       shape = 500        # Unit Width, measured in 1/1000 em.
-#       menu  = 5          # Width grade for the font's names.
-#       css   = "normal"   # "font-stretch' property of webfont CSS.
-#
-#       [buildPlans.shevska.widths.extended]
-#       shape = 576
-#       menu  = 7
-#       css   = "expanded"
-# }}}
-
-
-#       [buildPlans.shevska.widths.economy_]
-#       shape = 500
-#       menu = 5
-#       css = "normal"
-
-#       [buildPlans.shevska.widths.relaxed_]
-#       shape = 543
-#       menu = 6
-#       css = "semi-expanded"
-
 [buildPlans.shevska.widths.lounger_]
 shape = 576
 menu = 7
 css = "expanded"
-# }}}
 
 [buildPlans.shevska.slopes.upright]
 angle = 0.0
