@@ -246,12 +246,12 @@ disables = []
 #       extrabold: 800
 #       heavy: 900
 
-[buildPlans.shevska.weights.regl]
+[buildPlans.shevska.weights.base]
 shape = 417
 menu = 417
 css = 417
 
-[buildPlans.shevska.weights.emph]
+[buildPlans.shevska.weights.plus]
 shape = 741
 menu = 741
 css = 741
