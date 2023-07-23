@@ -129,8 +129,25 @@ serifs = "sans"
     # }}}
 
     # cryllic {{{
-    #cyrl-ka = "symmetric-connected-motion-serifed"
+    cyrl-capital-zhe = "symmetric-connected"
+    cyrl-zhe = "curly"
+    cyrl-capital-ka = "symmetric-touching-top-left-serifed"
+    cyrl-ka = "curly-serifless"
+    cyrl-capital-ya = "standing-open-serifless"
+    cyrl-ya = "straight-open-serifless"
 
+    cyrl-capital-ze = "unilateral-inward-serifed"
+    cyrl-ze = "serifless"
+
+    cyrl-yeri = "round"
+    cyrl-yery = "cursive"
+
+    cyrl-el = "straight"
+    cyrl-em = "hanging-serifless"
+    cyrl-en = "serifless"
+
+    cyrl-ef = "serifless"
+    cyrl-che = "standard"
     cyrl-capital-u = "cursive-serifless"
     # }}}
     # }}}
