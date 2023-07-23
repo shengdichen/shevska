@@ -1,4 +1,0 @@
-[submodule "ttf-unhinted"]
-	path = ttf-unhinted
-	url = git@git.sr.ht:~shengdichen/shevska_ttf-unhinted
-	branch = master
