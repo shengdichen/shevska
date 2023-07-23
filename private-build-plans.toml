@@ -71,20 +71,28 @@ serifs = "sans"
     # }}}
 
     # K {{{
-    # the curly k just looks right, both cap and non-cap
-    capital-k = "curly"
+    #       # the curly k just looks right, both cap and non-cap
+    #       capital-k = "curly-serifless"
+
+    # curly with a light foot
+    capital-k = "curly-bottom-right-serifed"
 
     #       capital-k = "symmetric-disconnected-motion-serifed"
     # }}}
 
     # L {{{
-    capital-l = "standard"
+    #       capital-l = "serifless"
 
-    #       # looks a bit too much
-    #       capital-l = "motion-serifed"
+    # looks a bit too much
+    capital-l = "motion-serifed"
     # }}}
 
-    capital-m = "hanging"
+    # M {{{
+    #       capital-m = "hanging"
+
+    #       capital-m = "slanted-sides-hanging"
+    capital-m = "slanted-sides-hanging-motion-serifed"
+    # }}}
 
     # N {{{
     # the asymmetry works very well here
