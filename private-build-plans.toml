@@ -934,3 +934,5 @@ upright = "normal"
 # }}}
 # }}}
 # }}}
+
+# vim: filetype=toml foldmethod=marker
