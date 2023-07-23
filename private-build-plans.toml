@@ -1,7 +1,8 @@
-# build me (Shevska!) with:
-#   1.  only ttf (enough for local UNIX usage)
+# NOTE:
+#   1. build with:
+#       a. only ttf
 #       $ npm run build -- ttf::shevska
-#   2.  build all (ttf, woff, css)
+#       b. build all (ttf, woff, css)
 #       $ npm run build -- contents::shevska
 
 [buildPlans.shevska]
