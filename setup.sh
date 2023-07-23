@@ -1,6 +1,5 @@
 clone_dir="clone"
 bin_dir="bin"
-out_dir="${clone_dir}/dist"
 
 function clone() {
     mkdir "${clone_dir}"
@@ -15,12 +14,14 @@ function clone() {
 function link() {
     ln -srf "private-build-plans.toml" "${clone_dir}"
 
+    out_dir="${clone_dir}/dist"
     mkdir -p "${out_dir}"
     target_dir="${out_dir}/shevska"
     if [ ! -d "${target_dir}" ]; then
         ln -srf "${bin_dir}" "${target_dir}"
     fi
-    unset target_dir
+
+    unset out_dir target_dir
 }
 
 function transport_font() {
@@ -40,4 +41,4 @@ function main() {
 }
 main
 
-unset clone_dir out_dir
+unset clone_dir
