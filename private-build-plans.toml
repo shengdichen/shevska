@@ -125,17 +125,24 @@ serifs = "sans"
     #       capital-s = "serifless"
     # }}}
 
-    capital-t = "standard"
-    capital-u = "toothless-corner-unilateral-motion-serifed"
+    capital-t = "serifless"
+
+    # UVW {{{
+    #       capital-u = "toothless-corner-unilateral-motion-serifed"
+    capital-u = "toothless-corner"
+
     capital-v = "straight-motion-serifed"
 
     # W {{{
     # the same DNA of double-v, but without the right-branch of the middle
     # intersection
     #       ->  looks less crowded than the double-v version
-    capital-w = "straight-asymmetric"
+    #       capital-w = "straight-asymmetric"
 
     #       capital-w = "straight-double-v"
+
+    capital-w = "curly"
+    # }}}
     # }}}
 
     capital-x = "straight-motion-serifed"
