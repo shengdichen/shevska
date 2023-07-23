@@ -17,6 +17,8 @@ serifs = "sans"
     [buildPlans.shevska.variants.design]
     # alpha-numberics {{{
     # alphabets {{{
+    diacritic-dot = "square"
+
     # latin {{{
     # majuscule {{{
     capital-a = "straight-top-serifed"
