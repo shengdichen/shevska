@@ -451,8 +451,8 @@ serifs = "sans"
   # }}}
 
 # what to build {{{
-# weights {{{
-# default weights {{{
+# weight {{{
+# default {{{
 #       [buildPlans.shevska.weights.thin]
 #       shape = 100
 #       menu = 100
@@ -510,8 +510,8 @@ menu = 741
 css = 741
 # }}}
 
-# widths {{{
-# default widths {{{
+# width {{{
+# default {{{
 #       [buildPlans.shevska.widths.normal]
 #       shape = 500        # Unit Width, measured in 1/1000 em.
 #       menu  = 5          # Width grade for the font's names.
@@ -540,15 +540,11 @@ menu = 7
 css = "expanded"
 # }}}
 
-# slopes {{{
 [buildPlans.shevska.slopes.upright]
 angle = 0.0
 shape = "upright"
 menu = "upright"
 css = "normal"
-#     oblique = "oblique"
-#     italic = "italic"
-# }}}
 # }}}
 
 # vim: filetype=toml foldmethod=marker
