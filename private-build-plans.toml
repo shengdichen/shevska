@@ -175,64 +175,50 @@ serifs = "sans"
     # }}}
 
     # symbols {{{
+    punctuation-dot = "square"
+    # descend to simulate space
+    underscore = "low"
+
     # dev {{{
     ampersand = "upper-open"
     asterisk = "turn-penta-low"
 
-    # "()" {{{
+    # ()
     paren = "normal"
-    # }}}
-
-    # "{}" {{{
-    #       brace = "curly"
+    # {}
     brace = "curly-flat-boundary"
-    # }}}
 
-    #       underscore = "above-baseline"
-    # underscore should be low enough to simulate a space
-    underscore = "low"
-
-    punctuation-dot = "square"
-    # }}}
-
-    # UNIX {{{
     tilde = "low"
 
-    # stretches beyond normal caps -> distinguish between alpha-nums
-    dollar = "open"
+    caret = "high"
+    dollar = "interrupted"
+    percent = "rings-continuous-slash-also-connected"
+    number-sign = "slanted-open"
 
     # elevated comma
     #   ->  clearly distinguishable between backquote and double quotes
     ascii-single-quote = "raised-comma"
 
     bar = "force-upright"
+    # }}}
 
-    #       at = "threefold"
     at = "compact"
-
-    # regards from Regex
     question = "corner-flat-hooked"
-
-
-    # percent, aka, the zsh user-prompt {{{
-    # a light connection between the slash and upper-left ring
-    percent = "rings-continuous-slash-also-connected"
-
-    #       percent = "rings-segmented-slash"
-    # }}}
-
-    # [z|ba]sh root-prompt
-    number-sign = "slanted-open"
-    # }}}
-
-    # niche {{{
-    pilcrow = "low"
+    # backtick
     ascii-grave = "straight"
-    caret = "high"
+
+    # misc {{{
+    cent = "open"
+    partial-derivative = "curly-bar"
+    lower-eth = "straight-bar"
+    micro-sign = "tailed-serifless"
+
+    # paragraph-indicator
+    pilcrow = "low"
+    # }}}
 
     # ligature for *-or-not-equal-to comparisons
     lig-ltgteq = "slanted"
-    # }}}
     # }}}
 
   # ligatures {{{
