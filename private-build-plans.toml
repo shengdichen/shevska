@@ -216,12 +216,22 @@ serifs = "sans"
     # paragraph-indicator
     pilcrow = "low"
     # }}}
-
-    # ligature for *-or-not-equal-to comparisons
-    lig-ltgteq = "slanted"
     # }}}
 
   # ligatures {{{
+    # leq, geq
+    lig-ltgteq = "flat"
+    # !=
+    lig-neq = "vertical-dotted"
+    # ==
+    lig-equal-chain = "with-notch"
+    # --
+    lig-hyphen-chain = "with-notch"
+    # =>
+    lig-double-arrow-bar = "with-notch"
+    # ->
+    lig-single-arrow-bar = "without-notch"
+
   [buildPlans.shevska.ligations]
   #     inherits = "default-calt"
 
