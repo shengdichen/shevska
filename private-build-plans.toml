@@ -102,7 +102,14 @@ serifs = "sans"
     #       capital-n = "motion-serifed"
     # }}}
 
-    capital-p = "open"
+    # PR {{{
+    #       capital-p = "open"
+    #       capital-r = "curly-open-motion-serifed"
+
+    capital-p = "open-motion-serifed"
+    #       capital-r = "standing-open"
+    capital-r = "standing-open-motion-serifed"
+    # }}}
 
     # Q {{{
     capital-q = "detached-tailed"
@@ -110,8 +117,6 @@ serifs = "sans"
     #       # tail similar to tilde
     #       capital-q = "detached-bend-tailed"
     # }}}
-
-    capital-r = "curly-open-motion-serifed"
 
     # S {{{
     # with a slight upper-right turn
