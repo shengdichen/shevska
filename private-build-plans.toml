@@ -340,15 +340,15 @@ serifs = "sans"
 
     # numbers {{{
     # 0 {{{
-    #       # a more rounded 0, better distinguishable from O and o
-    #       zero = "reverse-slashed-oval"
+    # a more rounded 0, better distinguishable from O and o
+    zero = "reverse-slashed-oval"
 
-    zero = "reverse-slashed"
+    #       zero = "reverse-slashed"
     # }}}
 
     # 1 {{{
     # a very pronounced, slanted hook
-    one = "nobase-long-top-serif"
+    one = "no-base-long-top-serif"
 
     #       # a pixelated hook
     #       #       possible confusion with:
@@ -363,16 +363,18 @@ serifs = "sans"
     nine = "straight-bar"
     # }}}
 
-    three = "flattop"
+    three = "flat-top"
     four = "semi-open-non-crossing"
     five = "oblique-upper-left-bar"
-    eight = "two-circles"
+    eight = "crossing-asymmetric"
 
     # 7 {{{
-    # with a natural curve of the body
-    seven = "bend-crossbar"
+    #       # with a natural curve of the body
+    #       seven = "bend-crossbar"
 
-    #       seven = "crossbar"
+    #       seven = "curly-crossbar"
+
+    seven = "straight-crossbar"
     # }}}
     # }}}
     # }}}
