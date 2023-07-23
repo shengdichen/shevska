@@ -17,6 +17,7 @@ serifs = "sans"
     [buildPlans.shevska.variants.design]
     # alpha-numberics {{{
     # alphabets {{{
+    # latin {{{
     # majuscule {{{
     capital-a = "straight-top-serifed"
 
@@ -109,8 +110,8 @@ serifs = "sans"
 
     z = "straight-serifless-with-crossbar"
     # }}}
+    # }}}
 
-    # misc {{{
     eszet = "traditional"
 
     # Greek {{{
@@ -126,13 +127,11 @@ serifs = "sans"
     lower-mu = "toothed-serifless"
     lower-iota = "serifed-diagonal-tailed"
     # }}}
-    # }}}
 
     # cryllic {{{
     #cyrl-ka = "symmetric-connected-motion-serifed"
 
     cyrl-capital-u = "cursive-serifless"
-    # }}}
     # }}}
     # }}}
 
