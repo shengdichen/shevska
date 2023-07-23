@@ -20,22 +20,36 @@ serifs = "sans"
     # alpha-numberics {{{
     # alphabets {{{
     # capitals {{{
-    capital-a = "straight-motion-serifed"
+    capital-a = "straight-top-serifed"
 
+    # BD {{{
     # B {{{
     # slight disconnection in the midddle
-    capital-b = "standard-interrupted-unilateral-motion-serifed"
+    capital-b = "standard-interrupted-unilateral-serifed"
 
     #       capital-b = "standard-unilateral-motion-serifed"
     # }}}
 
+    # D {{{
+    #       capital-d = "more-rounded-unilateral-serifed"
+
+    # use symmetrical serif in contrast to B
+    capital-d = "more-rounded-bilateral-serifed"
+    # }}}
+    # }}}
+
     capital-c = "unilateral-inward-serifed"
 
-    capital-d = "more-rounded-unilateral-motion-serifed"
-    capital-e = "motion-serifed"
-    capital-f = "motion-serifed"
-    capital-g = "toothless-corner-serifless-hookless"
-    capital-h = "standard"
+    capital-e = "top-left-serifed"
+    capital-f = "top-left-serifed"
+
+    # G {{{
+    #       capital-g = "toothless-corner-serifless-hookless"
+
+    # avoid similarity with C
+    capital-g = "toothless-corner-serifless-hooked"
+    # }}}
+    capital-h = "serifless"
     capital-i = "serifed"
 
     # J {{{
@@ -57,20 +71,28 @@ serifs = "sans"
     # }}}
 
     # K {{{
-    # the curly k just looks right, both cap and non-cap
-    capital-k = "curly"
+    #       # the curly k just looks right, both cap and non-cap
+    #       capital-k = "curly-serifless"
+
+    # curly with a light foot
+    capital-k = "curly-bottom-right-serifed"
 
     #       capital-k = "symmetric-disconnected-motion-serifed"
     # }}}
 
     # L {{{
-    capital-l = "standard"
+    #       capital-l = "serifless"
 
-    #       # looks a bit too much
-    #       capital-l = "motion-serifed"
+    # looks a bit too much
+    capital-l = "motion-serifed"
     # }}}
 
-    capital-m = "hanging"
+    # M {{{
+    #       capital-m = "hanging"
+
+    #       capital-m = "slanted-sides-hanging"
+    capital-m = "slanted-sides-hanging-motion-serifed"
+    # }}}
 
     # N {{{
     # the asymmetry works very well here
@@ -80,7 +102,14 @@ serifs = "sans"
     #       capital-n = "motion-serifed"
     # }}}
 
-    capital-p = "open"
+    # PR {{{
+    #       capital-p = "open"
+    #       capital-r = "curly-open-motion-serifed"
+
+    capital-p = "open-motion-serifed"
+    #       capital-r = "standing-open"
+    capital-r = "standing-open-motion-serifed"
+    # }}}
 
     # Q {{{
     capital-q = "detached-tailed"
@@ -89,8 +118,6 @@ serifs = "sans"
     #       capital-q = "detached-bend-tailed"
     # }}}
 
-    capital-r = "curly-open-motion-serifed"
-
     # S {{{
     # with a slight upper-right turn
     capital-s = "unilateral-inward-serifed"
@@ -98,32 +125,48 @@ serifs = "sans"
     #       capital-s = "serifless"
     # }}}
 
-    capital-t = "standard"
-    capital-u = "toothless-corner-unilateral-motion-serifed"
+    capital-t = "serifless"
+
+    # UVW {{{
+    #       capital-u = "toothless-corner-unilateral-motion-serifed"
+    capital-u = "toothless-corner"
+
     capital-v = "straight-motion-serifed"
 
     # W {{{
     # the same DNA of double-v, but without the right-branch of the middle
     # intersection
     #       ->  looks less crowded than the double-v version
-    capital-w = "straight-asymmetric"
+    #       capital-w = "straight-asymmetric"
 
     #       capital-w = "straight-double-v"
+
+    capital-w = "curly"
+    # }}}
     # }}}
 
     capital-x = "straight-motion-serifed"
 
+    # Y {{{
     #       capital-y = "straight"
-    capital-y = "straight-motion-serifed"
+    #       capital-y = "straight-motion-serifed"
+    capital-y = "straight-serifless"
+    # }}}
 
-    capital-z = "with-crossbar"
+    # Z {{{
+    #   capital-z = "straight-serifless-with-crossbar"
+    #   capital-z = "straight-bottom-serifed-with-crossbar"
+
+    #       capital-z = "straight-bottom-serifed-with-crossbar"
+    capital-z = "straight-top-serifed-with-horizontal-crossbar"
+    # }}}
     # }}}
 
     # non-caps {{{
     a = "double-storey-toothless-corner"
 
     b = "toothless-corner"
-    d = "toothless-corner"
+    d = "toothless-corner-serifless"
 
     e = "rounded"
 
@@ -135,9 +178,9 @@ serifs = "sans"
 
     # i {{{
     # upper-left {{{
-    #       # upper-left, sharp tail
-    #       #       tribute to Source Code Pro
-    #       i = "hooky"
+    # upper-left, sharp tail
+    #       tribute to Source Code Pro
+    i = "hooky"
     # }}}
 
     # lower-right {{{
@@ -154,8 +197,8 @@ serifs = "sans"
     #       # rounded tail
     #       i = "tailed"
 
-    # more subdued, rounded tail
-    i = "flat-tailed"
+    #       # more subdued, rounded tail
+    #       i = "flat-tailed"
     # }}}
 
     #       # lower-right, sharp tail
@@ -170,13 +213,18 @@ serifs = "sans"
     j = "flat-hook-serifless"
 
     # k {{{
+    #       # cursively playful with no risk of being mistaken for |K|
+    #       k = "cursive-serifless"
+
+    k = "symmetric-touching-serifless"
+
+
+
+
     #       # the curly k looks fuller
     #       k = "curly"
 
     #       k = "symmetric-disconnected"
-
-    # cursively playful with no risk of being mistaken for |K|
-    k = "cursive"
     # }}}
 
     # l {{{
@@ -188,6 +236,9 @@ serifs = "sans"
     #       l = "hooky-bottom"
 
     #       # bottom-right, curved tail
+    #       l = "tailed"
+
+    #       # bottom-right, subdued tail
     #       l = "tailed"
 
 
@@ -209,19 +260,24 @@ serifs = "sans"
     # }}}
 
     # n {{{
-    # rounded, upper-left (perfect symmetry)
-    #       greater clearity in upper-left, since rounded
-    n = "earless-rounded-straight"
+    #       # rounded, upper-left (perfect symmetry)
+    #       #       greater clearity in upper-left, since rounded
+    #       n = "earless-rounded-straight"
 
-    #       # cornered, upper-left
-    #       #       a bit more pronounced upper-left
-    #       n = "earless-corner-straight"
+    # cornered, upper-left
+    #       a bit more pronounced upper-left
+    n = "earless-corner-straight"
     # }}}
 
     p = "earless-corner"
     q = "earless-corner"
     r = "compact"
-    t = "hookless-asymmetric"
+
+    # t {{{
+    #       t = "hookless-asymmetric"
+    t = "hookless-asymmetric-short-neck"
+    #       t = "hookless-asymmetric-short-neck2"
+    # }}}
 
     # uvw {{{
     # cornered, lower-right
@@ -234,12 +290,20 @@ serifs = "sans"
     #       w = "curly"
 
     v = "curly"
-    w = "straight"
+    #       w = "straight"
+    w = "straight-vertical-sides"
     # }}}
 
-    x = "straight"
-    y = "curly"
-    z = "with-crossbar"
+    x = "straight-serifless"
+    # y {{{
+    #       y = "curly"
+    y = "straight-turn"
+    # }}}
+
+    # z {{{
+    z = "straight-serifless-with-crossbar"
+    #       z = "straight-serifless-with-horizontal-crossbar"
+    # }}}
     # }}}
 
     # misc {{{
@@ -248,10 +312,10 @@ serifs = "sans"
     # Greek {{{
     lower-alpha = "crossing"
 
-    capital-gamma = "motion-serifed"
+    capital-gamma = "top-right-serifed"
 
-    latn-epsilon = "serifless"
-    latn-reverse-epsilon = "serifless"
+    #latn-epsilon = "serifless"
+    #latn-reverse-epsilon = "serifless"
 
     lower-iota = "serifed-flat-tailed"
 
@@ -265,7 +329,7 @@ serifs = "sans"
     # }}}
 
     # cryllic {{{
-    cyrl-ka = "symmetric-connected-motion-serifed"
+    #cyrl-ka = "symmetric-connected-motion-serifed"
 
     # to distinguish between the English |Y| with shape similar to the English
     # |y| and tail similar to |g|
@@ -276,15 +340,15 @@ serifs = "sans"
 
     # numbers {{{
     # 0 {{{
-    #       # a more rounded 0, better distinguishable from O and o
-    #       zero = "reverse-slashed-oval"
+    # a more rounded 0, better distinguishable from O and o
+    zero = "reverse-slashed-oval"
 
-    zero = "reverse-slashed"
+    #       zero = "reverse-slashed"
     # }}}
 
     # 1 {{{
     # a very pronounced, slanted hook
-    one = "nobase-long-top-serif"
+    one = "no-base-long-top-serif"
 
     #       # a pixelated hook
     #       #       possible confusion with:
@@ -299,16 +363,18 @@ serifs = "sans"
     nine = "straight-bar"
     # }}}
 
-    three = "flattop"
+    three = "flat-top"
     four = "semi-open-non-crossing"
     five = "oblique-upper-left-bar"
-    eight = "two-circles"
+    eight = "crossing-asymmetric"
 
     # 7 {{{
-    # with a natural curve of the body
-    seven = "bend-crossbar"
+    #       # with a natural curve of the body
+    #       seven = "bend-crossbar"
 
-    #       seven = "crossbar"
+    #       seven = "curly-crossbar"
+
+    seven = "straight-crossbar"
     # }}}
     # }}}
     # }}}
@@ -319,12 +385,20 @@ serifs = "sans"
     ampersand = "upper-open"
     asterisk = "flip-penta-low"
 
+    # "()" {{{
     paren = "normal"
-    brace = "curly"
+    # }}}
+
+    # "{}" {{{
+    #       brace = "curly"
+    brace = "curly-flat-boundary"
+    # }}}
 
     #       underscore = "above-baseline"
     # underscore should be low enough to simulate a space
     underscore = "low"
+
+    punctuation-dot = "square"
     # }}}
 
     # UNIX {{{
