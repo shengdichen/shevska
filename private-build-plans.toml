@@ -114,21 +114,17 @@ serifs = "sans"
     eszet = "traditional"
 
     # Greek {{{
-    lower-alpha = "crossing"
-
-    capital-gamma = "top-right-serifed"
-
-    #latn-epsilon = "serifless"
-    #latn-reverse-epsilon = "serifless"
-
-    lower-iota = "serifed-flat-tailed"
-
-    # Lambda {{{
-    # Capital-Lambda
+    # majuscule lambda & majuscule delta
     turn-v = "straight"
-
-    # non-cap lambda
+    # minuscule lambda
     lower-lambda = "straight-turn"
+
+    lower-alpha = "crossing"
+    lower-delta = "flat-top"
+    capital-gamma = "top-right-serifed"
+    lower-xi = "flat-top"
+    lower-mu = "toothed-serifless"
+    lower-iota = "serifed-diagonal-tailed"
     # }}}
     # }}}
 
