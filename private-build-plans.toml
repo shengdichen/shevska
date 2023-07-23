@@ -385,12 +385,20 @@ serifs = "sans"
     ampersand = "upper-open"
     asterisk = "flip-penta-low"
 
+    # "()" {{{
     paren = "normal"
-    brace = "curly"
+    # }}}
+
+    # "{}" {{{
+    #       brace = "curly"
+    brace = "curly-flat-boundary"
+    # }}}
 
     #       underscore = "above-baseline"
     # underscore should be low enough to simulate a space
     underscore = "low"
+
+    punctuation-dot = "square"
     # }}}
 
     # UNIX {{{
