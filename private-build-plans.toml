@@ -166,7 +166,7 @@ serifs = "sans"
     a = "double-storey-toothless-corner"
 
     b = "toothless-corner"
-    d = "toothless-corner"
+    d = "toothless-corner-serifless"
 
     e = "rounded"
 
@@ -178,9 +178,9 @@ serifs = "sans"
 
     # i {{{
     # upper-left {{{
-    #       # upper-left, sharp tail
-    #       #       tribute to Source Code Pro
-    #       i = "hooky"
+    # upper-left, sharp tail
+    #       tribute to Source Code Pro
+    i = "hooky"
     # }}}
 
     # lower-right {{{
@@ -197,8 +197,8 @@ serifs = "sans"
     #       # rounded tail
     #       i = "tailed"
 
-    # more subdued, rounded tail
-    i = "flat-tailed"
+    #       # more subdued, rounded tail
+    #       i = "flat-tailed"
     # }}}
 
     #       # lower-right, sharp tail
@@ -213,13 +213,18 @@ serifs = "sans"
     j = "flat-hook-serifless"
 
     # k {{{
+    #       # cursively playful with no risk of being mistaken for |K|
+    #       k = "cursive-serifless"
+
+    k = "symmetric-touching-serifless"
+
+
+
+
     #       # the curly k looks fuller
     #       k = "curly"
 
     #       k = "symmetric-disconnected"
-
-    # cursively playful with no risk of being mistaken for |K|
-    k = "cursive"
     # }}}
 
     # l {{{
