@@ -147,10 +147,19 @@ serifs = "sans"
 
     capital-x = "straight-motion-serifed"
 
+    # Y {{{
     #       capital-y = "straight"
-    capital-y = "straight-motion-serifed"
+    #       capital-y = "straight-motion-serifed"
+    capital-y = "straight-serifless"
+    # }}}
 
-    capital-z = "with-crossbar"
+    # Z {{{
+    #   capital-z = "straight-serifless-with-crossbar"
+    #   capital-z = "straight-bottom-serifed-with-crossbar"
+
+    #       capital-z = "straight-bottom-serifed-with-crossbar"
+    capital-z = "straight-top-serifed-with-horizontal-crossbar"
+    # }}}
     # }}}
 
     # non-caps {{{
