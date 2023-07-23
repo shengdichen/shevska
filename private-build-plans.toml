@@ -155,43 +155,22 @@ serifs = "sans"
     # }}}
 
     # numbers {{{
-    # 0 {{{
-    # a more rounded 0, better distinguishable from O and o
     zero = "oval-reverse-slashed"
 
-    #       zero = "reverse-slashed"
-    # }}}
-
-    # 1 {{{
     # a very pronounced, slanted hook
     one = "no-base-long-top-serif"
 
-    #       # a pixelated hook
-    #       #       possible confusion with:
-    #       #       1.  straight |l|
-    #       #       2.  upper-left hooked |l|
-    #       one = "nobase-flat-top-serif"
-    # }}}
-
-    # the straights {{{
+    # straight neck
     two = "straight-neck"
     six = "straight-bar"
     nine = "straight-bar"
-    # }}}
 
     three = "flat-top"
     four = "semi-open-non-crossing"
     five = "oblique-upper-left-bar"
     eight = "crossing-asymmetric"
 
-    # 7 {{{
-    #       # with a natural curve of the body
-    #       seven = "bend-crossbar"
-
-    #       seven = "curly-crossbar"
-
     seven = "straight-serifless-crossbar"
-    # }}}
     # }}}
     # }}}
 
