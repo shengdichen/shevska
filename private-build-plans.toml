@@ -17,150 +17,55 @@ serifs = "sans"
     [buildPlans.shevska.variants.design]
     # alpha-numberics {{{
     # alphabets {{{
-    # capitals {{{
+    # majuscule {{{
     capital-a = "straight-top-serifed"
 
-    # BD {{{
-    # B {{{
     # slight disconnection in the midddle
     capital-b = "standard-interrupted-unilateral-serifed"
-
-    #       capital-b = "standard-unilateral-motion-serifed"
-    # }}}
-
-    # D {{{
-    #       capital-d = "more-rounded-unilateral-serifed"
-
     # use symmetrical serif in contrast to B
     capital-d = "more-rounded-bilateral-serifed"
-    # }}}
-    # }}}
 
     capital-c = "unilateral-inward-serifed"
 
     capital-e = "top-left-serifed"
     capital-f = "top-left-serifed"
 
-    # G {{{
-    #       capital-g = "toothless-corner-serifless-hookless"
-
     # avoid similarity with C
     capital-g = "toothless-corner-serifless-hooked"
-    # }}}
+
     capital-h = "serifless"
     capital-i = "serifed"
 
-    # J {{{
-    # elongated {{{
-    # a pronounced, hooked tail without any serif
+    # elongated with a pronounced, hooked tail sans serif
     capital-j = "descending-serifless"
-
-    #       # left serif only
-    #       capital-j = "descending-flat-hook-serifed"
-    # }}}
-
-    # normal {{{
-    #       # left serif only
-    #       capital-j = "serifed"
-
-    #       # serif on both sides, more pronounced on the left
-    #       capital-j = "serifed-both-sides"
-    # }}}
-    # }}}
-
-    # K {{{
-    #       # the curly k just looks right, both cap and non-cap
-    #       capital-k = "curly-serifless"
 
     # curly with a light foot
     capital-k = "curly-bottom-right-serifed"
 
-    #       capital-k = "symmetric-disconnected-motion-serifed"
-    # }}}
-
-    # L {{{
-    #       capital-l = "serifless"
-
-    # looks a bit too much
-    capital-l = "motion-serifed"
-    # }}}
-
-    # M {{{
-    #       capital-m = "hanging"
-
-    #       capital-m = "slanted-sides-hanging"
     capital-m = "slanted-sides-hanging-motion-serifed"
-    # }}}
-
-    # N {{{
-    # the asymmetry works very well here
     capital-n = "asymmetric-motion-serifed"
 
-    #       # the more traditional N
-    #       capital-n = "motion-serifed"
-    # }}}
-
-    # PR {{{
-    #       capital-p = "open"
-    #       capital-r = "curly-open-motion-serifed"
-
     capital-p = "open-motion-serifed"
-    #       capital-r = "standing-open"
     capital-r = "standing-open-motion-serifed"
-    # }}}
 
-    # Q {{{
     capital-q = "detached-tailed"
 
-    #       # tail similar to tilde
-    #       capital-q = "detached-bend-tailed"
-    # }}}
-
-    # S {{{
-    # with a slight upper-right turn
+    # with a slight upper-right bend
     capital-s = "unilateral-inward-serifed"
-
-    #       capital-s = "serifless"
-    # }}}
 
     capital-t = "serifless"
 
-    # UVW {{{
-    #       capital-u = "toothless-corner-unilateral-motion-serifed"
     capital-u = "toothed-serifless"
-
     capital-v = "straight-motion-serifed"
-
-    # W {{{
-    # the same DNA of double-v, but without the right-branch of the middle
-    # intersection
-    #       ->  looks less crowded than the double-v version
-    #       capital-w = "straight-asymmetric"
-
-    #       capital-w = "straight-double-v"
-
     capital-w = "curly-serifless"
-    # }}}
-    # }}}
 
     capital-x = "straight-motion-serifed"
 
-    # Y {{{
-    #       capital-y = "straight"
-    #       capital-y = "straight-motion-serifed"
     capital-y = "straight-serifless"
-    # }}}
-
-    # Z {{{
-    #   capital-z = "straight-serifless-with-crossbar"
-    #   capital-z = "straight-bottom-serifed-with-crossbar"
-
-    #       capital-z = "straight-bottom-serifed-with-crossbar"
     capital-z = "straight-top-serifed-with-horizontal-crossbar"
     # }}}
-    # }}}
 
-    # non-caps {{{
+    # minuscule {{{
     a = "double-storey-toothless-corner"
 
     b = "toothless-corner-serifless"
@@ -174,134 +79,35 @@ serifs = "sans"
     g = "single-storey-flat-hook-earless-corner"
     h = "straight-serifless"
 
-    # i {{{
-    # upper-left {{{
-    # upper-left, sharp tail
-    #       tribute to Source Code Pro
     i = "hooky"
-    # }}}
-
-    # lower-right {{{
-    # non-sharp tails {{{
-    # i is such a key letter for control structures that we allow, on a
-    # strictly ad-hoc basis, playfully rounded tails.
-    # Remember that life is great whenever another loop is being written with
-    # any of these cutely tailed |i|s.
-
-
-    #       # diagonally-upwards pointing tail
-    #       i = "diagonal-tailed"
-
-    #       # rounded tail
-    #       i = "tailed"
-
-    #       # more subdued, rounded tail
-    #       i = "flat-tailed"
-    # }}}
-
-    #       # lower-right, sharp tail
-    #       i = "hooky-bottom"
-    # }}}
-
-
-    #       # like a straight line
-    #       i = "serifless"
-    # }}}
 
     j = "flat-hook-serifless"
-
-    # k {{{
-    #       # cursively playful with no risk of being mistaken for |K|
-    #       k = "cursive-serifless"
-
     k = "symmetric-touching-serifless"
 
-
-
-
-    #       # the curly k looks fuller
-    #       k = "curly"
-
-    #       k = "symmetric-disconnected"
-    # }}}
-
-    # l {{{
-    # upper-left, sharp tail
     l = "hooky"
 
-
-    #       # bottom-right, sharp tail
-    #       l = "hooky-bottom"
-
-    #       # bottom-right, curved tail
-    #       l = "tailed"
-
-    #       # bottom-right, subdued tail
-    #       l = "tailed"
-
-
-    #       # just a straight line
-    #       #       dangerously similar to the pipeline |
-    #       l = "serifless"
-    # }}}
-
-    # m {{{
     # one single continuous arch (perfect symmetry)
     m = "earless-single-arch-short-leg-serifless"
 
-    #       # two joint arches, cornered upper-left
-    #       m = "earless-corner-double-arch-shortleg"
-
-    #       # two joint arches, rounded upper-left
-    #       #       separation of the two arches might appear too dominant
-    #       m = "earless-rounded-double-arch-shortleg"
-    # }}}
-
-    # n {{{
-    #       # rounded, upper-left (perfect symmetry)
-    #       #       greater clearity in upper-left, since rounded
-    #       n = "earless-rounded-straight"
-
     # cornered, upper-left
-    #       a bit more pronounced upper-left
     n = "earless-corner-straight-serifless"
-    # }}}
 
     p = "earless-corner-serifless"
     q = "earless-corner-straight-serifless"
     r = "compact-serifless"
 
-    # t {{{
-    #       t = "hookless-asymmetric"
     t = "hookless-asymmetric-short-neck"
-    #       t = "hookless-asymmetric-short-neck2"
-    # }}}
 
-    # uvw {{{
-    # cornered, lower-right
-    #       the extra assymetry with the cornered lower-right distinguishes
-    #       from "v"
     u = "toothless-corner-serifless"
 
-    # |v| and |w| should display pairwise distinguishing styles
-    #       v = "straight"
-    #       w = "curly"
-
+    # pairwise distinguishing styles for |v| and |w|
     v = "curly-serifless"
-    #       w = "straight"
     w = "straight-vertical-sides-serifless"
-    # }}}
 
     x = "straight-serifless"
-    # y {{{
-    #       y = "curly"
     y = "straight-turn-serifless"
-    # }}}
 
-    # z {{{
     z = "straight-serifless-with-crossbar"
-    #       z = "straight-serifless-with-horizontal-crossbar"
-    # }}}
     # }}}
 
     # misc {{{
