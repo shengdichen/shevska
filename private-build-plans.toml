@@ -290,12 +290,20 @@ serifs = "sans"
     #       w = "curly"
 
     v = "curly"
-    w = "straight"
+    #       w = "straight"
+    w = "straight-vertical-sides"
     # }}}
 
-    x = "straight"
-    y = "curly"
-    z = "with-crossbar"
+    x = "straight-serifless"
+    # y {{{
+    #       y = "curly"
+    y = "straight-turn"
+    # }}}
+
+    # z {{{
+    z = "straight-serifless-with-crossbar"
+    #       z = "straight-serifless-with-horizontal-crossbar"
+    # }}}
     # }}}
 
     # misc {{{
