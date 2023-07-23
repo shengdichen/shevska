@@ -2,12 +2,13 @@ clone_dir="clone"
 bin_dir="bin"
 
 function clone() {
-    mkdir "${clone_dir}"
+    if [ ! -d "${clone_dir}" ]; then
+        mkdir "${clone_dir}"
+        git clone --depth 2 https://github.com/be5invis/Iosevka.git "${clone_dir}"
+    fi
 
     cd "${clone_dir}"
-    git clone --depth 2 https://github.com/be5invis/Iosevka.git ./
     npm install
-
     cd ..
 }
 
