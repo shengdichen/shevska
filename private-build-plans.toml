@@ -1,12 +1,4 @@
-# NOTE:
-#   1. build with:
-#       a. only ttf
-#       $ npm run build -- ttf::shevska
-#       b. build all (ttf, woff, css)
-#       $ npm run build -- contents::shevska
-
 [buildPlans.shevska]
-# name of the font-family
 family = "Shevska"
 spacing = "normal"
 serifs = "sans"
