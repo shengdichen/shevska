@@ -1,21 +1,19 @@
-# build me (Shevska!) with:
-#   1.  only ttf (enough for local UNIX usage)
+# NOTE:
+#   1. build with:
+#       a. only ttf
 #       $ npm run build -- ttf::shevska
-#   2.  build all (ttf, woff, css)
+#       b. build all (ttf, woff, css)
 #       $ npm run build -- contents::shevska
 
-
-# Shevska {{{
 [buildPlans.shevska]
 # name of the font-family
 family = "Shevska"
 spacing = "normal"
 serifs = "sans"
 
-
   # glyphs for the three different Slopes (Upright, Italic, Oblique) {{{
   [buildPlans.shevska.variants]
-    # upright {{{
+
     [buildPlans.shevska.variants.design]
     # alpha-numberics {{{
     # alphabets {{{
@@ -129,7 +127,7 @@ serifs = "sans"
 
     # UVW {{{
     #       capital-u = "toothless-corner-unilateral-motion-serifed"
-    capital-u = "toothless-corner"
+    capital-u = "toothless-corner-serifless"
 
     capital-v = "straight-motion-serifed"
 
@@ -141,7 +139,7 @@ serifs = "sans"
 
     #       capital-w = "straight-double-v"
 
-    capital-w = "curly"
+    capital-w = "curly-serifless"
     # }}}
     # }}}
 
@@ -165,7 +163,7 @@ serifs = "sans"
     # non-caps {{{
     a = "double-storey-toothless-corner"
 
-    b = "toothless-corner"
+    b = "toothless-corner-serifless"
     d = "toothless-corner-serifless"
 
     e = "rounded"
@@ -173,8 +171,8 @@ serifs = "sans"
     # extended tail and elevated crossbar for the ultimate gothic look
     f = "flat-hook-extended-crossbar-at-x-height"
 
-    g = "single-storey-earless-corner-flat-hook"
-    h = "straight"
+    g = "single-storey-flat-hook-earless-corner"
+    h = "straight-serifless"
 
     # i {{{
     # upper-left {{{
@@ -249,7 +247,7 @@ serifs = "sans"
 
     # m {{{
     # one single continuous arch (perfect symmetry)
-    m = "earless-single-arch-short-leg"
+    m = "earless-single-arch-short-leg-serifless"
 
     #       # two joint arches, cornered upper-left
     #       m = "earless-corner-double-arch-shortleg"
@@ -266,12 +264,12 @@ serifs = "sans"
 
     # cornered, upper-left
     #       a bit more pronounced upper-left
-    n = "earless-corner-straight"
+    n = "earless-corner-straight-serifless"
     # }}}
 
-    p = "earless-corner"
-    q = "earless-corner"
-    r = "compact"
+    p = "earless-corner-serifless"
+    q = "earless-corner-straight-serifless"
+    r = "compact-serifless"
 
     # t {{{
     #       t = "hookless-asymmetric"
@@ -283,21 +281,21 @@ serifs = "sans"
     # cornered, lower-right
     #       the extra assymetry with the cornered lower-right distinguishes
     #       from "v"
-    u = "toothless-corner"
+    u = "toothless-corner-serifless"
 
     # |v| and |w| should display pairwise distinguishing styles
     #       v = "straight"
     #       w = "curly"
 
-    v = "curly"
+    v = "curly-serifless"
     #       w = "straight"
-    w = "straight-vertical-sides"
+    w = "straight-vertical-sides-serifless"
     # }}}
 
     x = "straight-serifless"
     # y {{{
     #       y = "curly"
-    y = "straight-turn"
+    y = "straight-turn-serifless"
     # }}}
 
     # z {{{
@@ -333,7 +331,7 @@ serifs = "sans"
 
     # to distinguish between the English |Y| with shape similar to the English
     # |y| and tail similar to |g|
-    cyrl-capital-u = "cursive-flat-hook"
+    cyrl-capital-u = "cursive-flat-hook-serifless"
     # }}}
     # }}}
     # }}}
@@ -341,7 +339,7 @@ serifs = "sans"
     # numbers {{{
     # 0 {{{
     # a more rounded 0, better distinguishable from O and o
-    zero = "reverse-slashed-oval"
+    zero = "oval-reverse-slashed"
 
     #       zero = "reverse-slashed"
     # }}}
@@ -374,16 +372,15 @@ serifs = "sans"
 
     #       seven = "curly-crossbar"
 
-    seven = "straight-crossbar"
+    seven = "straight-serifless-crossbar"
     # }}}
     # }}}
     # }}}
-
 
     # symbols {{{
     # dev {{{
     ampersand = "upper-open"
-    asterisk = "flip-penta-low"
+    asterisk = "turn-penta-low"
 
     # "()" {{{
     paren = "normal"
@@ -414,7 +411,7 @@ serifs = "sans"
     bar = "force-upright"
 
     #       at = "threefold"
-    at = "short"
+    at = "compact"
 
     # regards from Regex
     question = "corner-flat-hooked"
@@ -432,7 +429,7 @@ serifs = "sans"
     # }}}
 
     # niche {{{
-    paragraph-sign = "low"
+    pilcrow = "low"
     ascii-grave = "straight"
     caret = "high"
 
@@ -440,151 +437,6 @@ serifs = "sans"
     lig-ltgteq = "slanted"
     # }}}
     # }}}
-    # }}}
-
-
-# slanted {{{
-#           # italic {{{
-#           [buildPlans.shevska.variants.italic]
-#           turn-v = "straight"
-#           capital-b = "more-asymmetric"
-#           capital-d = "more-rounded"
-#
-#           capital-g = "toothless-corner-hooked"
-#           capital-i = "serifed"
-#           capital-j = "serifed-both-sides"
-#           capital-k = "curly"
-#           capital-m = "hanging"
-#           capital-q = "taily"
-#           capital-r = "curly"
-#           capital-y = "curly"
-#
-#           a = "double-storey-tailed"
-#           b = "toothless-rounded"
-#           d = "toothless-rounded"
-#           e = "rounded"
-#           f = "flat-hook-tailed"
-#           g = "earless-rounded"
-#           h = "tailed"
-#           i = "tailed"
-#           j = "flat-hook-serifless"
-#           k = "cursive"
-#           #       l = "serifed-flat-tailed"
-#           l = "tailed"
-#           m = "earless-rounded-double-arch-shortleg-tailed"
-#           n = "earless-corner-tailed"
-#           p = "earless-rounded"
-#           q = "earless-rounded-tailed"
-#           r = "compact"
-#           t = "flat-hook"
-#           u = "tailed"
-#           v = "curly"
-#           w = "curly"
-#           x = "curly"
-#           y = "curly-turn"
-#           z = "with-horizontal-crossbar"
-#           eszet = "longs-s-lig"
-#           lambda = "straight"
-#           cyrl-capital-u = "curly-turn"
-#           zero = "reverse-slashed"
-#           one = "nobase-long-top-serif"
-#           two = "curly-neck"
-#           three = "twoarcs"
-#           four = "open-non-crossing"
-#           six = "open-contour"
-#           seven = "crossbar"
-#           eight = "two-circles"
-#           nine = "open-contour"
-#           tilde = "low"
-#           asterisk = "flip-penta-low"
-#           underscore = "above-baseline"
-#           paragraph-sign = "low"
-#           caret = "high"
-#           paren = "normal"
-#           brace = "curly"
-#           number-sign = "slanted-open"
-#           ampersand = "upper-open"
-#           at = "short"
-#           dollar = "open"
-#           percent = "dots"
-#           bar = "natural-slope"
-#           lig-ltgteq = "slanted"
-#           ascii-single-quote = "raised-comma"
-#           ascii-grave = "straight"
-#           # }}}
-#
-#
-#           # oblique {{{
-#           [buildPlans.shevska.variants.oblique]
-#           turn-v = "straight"
-#           capital-b = "more-asymmetric"
-#           capital-d = "more-rounded"
-#
-#           capital-g = "toothless-corner-hooked"
-#           capital-i = "serifed"
-#           capital-j = "serifed-both-sides"
-#           capital-k = "curly"
-#           capital-m = "hanging"
-#           capital-q = "taily"
-#           capital-r = "curly"
-#           capital-y = "curly"
-#
-#           a = "double-storey-tailed"
-#           b = "toothless-rounded"
-#           d = "toothless-rounded"
-#           e = "rounded"
-#           f = "flat-hook-tailed"
-#           g = "earless-rounded"
-#           h = "tailed"
-#           i = "tailed"
-#           j = "flat-hook-serifless"
-#           k = "cursive"
-#           #       l = "serifed-flat-tailed"
-#           l = "tailed"
-#           m = "earless-rounded-double-arch-shortleg-tailed"
-#           n = "earless-corner-tailed"
-#           p = "earless-rounded"
-#           q = "earless-rounded-tailed"
-#           r = "compact"
-#           t = "flat-hook"
-#           u = "tailed"
-#           v = "curly"
-#           w = "curly"
-#           x = "curly"
-#           y = "curly-turn"
-#           z = "with-horizontal-crossbar"
-#           eszet = "longs-s-lig"
-#           lambda = "straight"
-#           cyrl-capital-u = "curly-turn"
-#           zero = "reverse-slashed"
-#           one = "nobase-long-top-serif"
-#           two = "curly-neck"
-#           three = "twoarcs"
-#           four = "open-non-crossing"
-#           six = "open-contour"
-#           seven = "crossbar"
-#           eight = "two-circles"
-#           nine = "open-contour"
-#           tilde = "low"
-#           asterisk = "flip-penta-low"
-#           underscore = "above-baseline"
-#           paragraph-sign = "low"
-#           caret = "high"
-#           paren = "normal"
-#           brace = "curly"
-#           number-sign = "slanted-open"
-#           ampersand = "upper-open"
-#           at = "short"
-#           dollar = "open"
-#           percent = "dots"
-#           bar = "natural-slope"
-#           lig-ltgteq = "slanted"
-#           ascii-single-quote = "raised-comma"
-#           ascii-grave = "straight"
-#           # }}}
-# }}}
-  # }}}
-
 
   # ligatures {{{
   [buildPlans.shevska.ligations]
@@ -598,10 +450,9 @@ serifs = "sans"
   disables = []
   # }}}
 
-
 # what to build {{{
-# weights {{{
-# default weights {{{
+# weight {{{
+# default {{{
 #       [buildPlans.shevska.weights.thin]
 #       shape = 100
 #       menu = 100
@@ -648,7 +499,6 @@ serifs = "sans"
 #       css = 900
 # }}}
 
-
 [buildPlans.shevska.weights.regl]
 shape = 417
 menu = 417
@@ -660,277 +510,16 @@ menu = 741
 css = 741
 # }}}
 
-
-# widths {{{
-# default widths {{{
-#       [buildPlans.shevska.widths.normal]
-#       shape = 500        # Unit Width, measured in 1/1000 em.
-#       menu  = 5          # Width grade for the font's names.
-#       css   = "normal"   # "font-stretch' property of webfont CSS.
-#
-#       [buildPlans.shevska.widths.extended]
-#       shape = 576
-#       menu  = 7
-#       css   = "expanded"
-# }}}
-
-
-#       [buildPlans.shevska.widths.economy_]
-#       shape = 500
-#       menu = 5
-#       css = "normal"
-
-#       [buildPlans.shevska.widths.relaxed_]
-#       shape = 543
-#       menu = 6
-#       css = "semi-expanded"
-
 [buildPlans.shevska.widths.lounger_]
 shape = 576
 menu = 7
 css = "expanded"
+
+[buildPlans.shevska.slopes.upright]
+angle = 0.0
+shape = "upright"
+menu = "upright"
+css = "normal"
 # }}}
 
-
-# slopes {{{
-[buildPlans.shevska.slopes]
-upright = "normal"
-#     oblique = "oblique"
-#     italic = "italic"
-# }}}
-# }}}
-# }}}
-
-
-# Sanshka {{{
-[buildPlans.sanshka]
-# name of the font-family
-family = "Sanshka"
-spacing = "quasi-proportional"
-serifs = "sans"
-
-
-  # glyphs for the three different Slopes (Upright, Italic, Oblique) {{{
-  [buildPlans.sanshka.variants]
-    # upright {{{
-    [buildPlans.sanshka.variants.design]
-
-    # alphabets {{{
-    # capitals {{{
-capital-a = "straight"
-capital-b = "standard"
-capital-d = "more-rounded"
-capital-e = "standard"
-capital-f = "standard"
-capital-g = "toothless-corner-hookless"
-capital-h = "standard"
-capital-i = "short-serifed"
-capital-j = "serifless"
-capital-k = "curly"
-capital-l = "standard"
-capital-m = "hanging"
-capital-n = "standard"
-capital-p = "closed"
-capital-q = "horizontal-tailed"
-capital-r = "curly-open"
-capital-t = "standard"
-capital-s = "serifless"
-capital-u = "toothless-corner"
-capital-v = "straight"
-capital-w = "straight"
-capital-x = "straight"
-capital-y = "straight"
-capital-z = "with-crossbar"
-    # }}}
-
-    # non-caps {{{
-a = "double-storey-toothless-corner"
-b = "toothless-corner"
-d = "toothless-corner"
-e = "rounded"
-f = "flat-hook-crossbar-at-x-height"
-g = "single-storey-earless-corner-flat-hook"
-h = "straight"
-i = "serifless"
-j = "flat-hook-serifless"
-k = "curly"
-l = "serifless"
-m = "earless-corner-double-arch-short-leg"
-n = "earless-corner-straight"
-p = "earless-corner"
-q = "earless-corner"
-r = "compact"
-s = "serifless"
-t = "cross"
-u = "toothless-corner"
-v = "straight"
-w = "curly"
-x = "curly"
-y = "curly"
-z = "with-crossbar"
-    # }}}
-    # }}}
-
-
-# symbols {{{
-eszet = "longs-s-lig"
-turn-v = "straight"
-lambda = "straight"
-cyrl-capital-u = "curly-turn"
-zero = "reverse-slashed"
-one = "nobase-long-top-serif"
-two = "straight-neck"
-three = "twoarcs"
-four = "semi-open-non-crossing"
-five = "oblique-upper-left-bar"
-six = "straight-bar"
-seven = "crossbar"
-eight = "two-circles"
-nine = "straight-bar"
-tilde = "low"
-asterisk = "flip-penta-low"
-underscore = "low"
-paragraph-sign = "low"
-caret = "high"
-paren = "normal"
-brace = "curly"
-number-sign = "slanted-open"
-ampersand = "upper-open"
-at = "fourfold"
-dollar = "opencap"
-percent = "rings-connected"
-bar = "natural-slope"
-lig-ltgteq = "slanted"
-ascii-single-quote = "straight"
-ascii-grave = "straight"
-question = "smooth"
-# }}}
-    # }}}
-
-
-# slanted {{{
-# italic {{{
-[buildPlans.sanshka.variants.italic]
-# }}}
-
-# oblique {{{
-[buildPlans.sanshka.variants.oblique]
-# }}}
-# }}}
-  # }}}
-
-
-  # ligatures {{{
-  [buildPlans.sanshka.ligations]
-  #     inherits = "default-calt"
-
-  #     # discretionary ligatures
-  #     inherits = "dlig"
-
-  enables = ["center-ops", "arrow", "arrow2", "trig", "eqeqeq", "eqeq", "ineq", "exeqeq", "exeqeq-dotted", "eqexeq", "eqexeq-dotted", "eqexeq-dl", "eqexeq-dl-dotted", "exeq", "exeq-dotted", "tildeeq", "eqslasheq", "slasheq", "ltgt-ne", "ltgt-diamond", "brst", "plusplus", "kern-dotty", "logic", "llgg", "llggeq", "dot-as-operator", "lteq-as-arrow", "gteq-as-co-arrow", "html-comment", "colon-greater-as-colon-arrow", "brace-bar", "brack-bar"]
-
-  disables = []
-  # }}}
-
-
-# what to build {{{
-# weights {{{
-# default weights {{{
-#       [buildPlans.sanshka.weights.thin]
-#       shape = 100
-#       menu = 100
-#       css = 100
-#
-#       [buildPlans.sanshka.weights.extralight]
-#       shape = 200
-#       menu = 200
-#       css = 200
-#
-#       [buildPlans.sanshka.weights.light]
-#       shape = 300
-#       menu = 300
-#       css = 300
-#
-#       [buildPlans.shevska.weights.regular]
-#       shape = 400
-#       menu = 400
-#       css = 400
-#
-#       [buildPlans.shevska.weights.medium]
-#       shape = 500
-#       menu = 500
-#       css = 500
-#
-#       [buildPlans.sanshka.weights.semibold]
-#       shape = 600
-#       menu = 600
-#       css = 600
-#
-#       [buildPlans.shevska.weights.bold]
-#       shape = 700
-#       menu = 700
-#       css = 700
-#
-#       [buildPlans.shevska.weights.extrabold]
-#       shape = 800
-#       menu = 800
-#       css = 800
-#
-#       [buildPlans.sanshka.weights.heavy]
-#       shape = 900
-#       menu = 900
-#       css = 900
-# }}}
-
-
-[buildPlans.sanshka.weights.regl]
-shape = 417
-menu = 417
-css = 417
-
-[buildPlans.sanshka.weights.emph]
-shape = 741
-menu = 741
-css = 741
-# }}}
-
-
-# widths {{{
-# default widths {{{
-#       [buildPlans.sanshka.widths.normal]
-#       shape = 500        # Unit Width, measured in 1/1000 em.
-#       menu  = 5          # Width grade for the font's names.
-#       css   = "normal"   # "font-stretch' property of webfont CSS.
-#
-#       [buildPlans.sanshka.widths.extended]
-#       shape = 576
-#       menu  = 7
-#       css   = "expanded"
-# }}}
-
-
-#       [buildPlans.sanshka.widths.economy_]
-#       shape = 500
-#       menu = 5
-#       css = "normal"
-
-#       [buildPlans.sanshka.widths.relaxed_]
-#       shape = 543
-#       menu = 6
-#       css = "semi-expanded"
-
-[buildPlans.sanshka.widths.lounger_]
-shape = 576
-menu = 7
-css = "expanded"
-# }}}
-
-
-# slopes {{{
-[buildPlans.sanshka.slopes]
-upright = "normal"
-#     oblique = "oblique"
-#     italic = "italic"
-# }}}
-# }}}
-# }}}
+# vim: filetype=toml foldmethod=marker
