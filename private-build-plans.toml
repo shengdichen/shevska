@@ -257,7 +257,7 @@ menu = 741
 css = 741
 # }}}
 
-[buildPlans.shevska.widths.lounger_]
+[buildPlans.shevska.widths.exact_]
 shape = 576
 menu = 7
 css = "expanded"
