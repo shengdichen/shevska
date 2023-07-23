@@ -1,11 +1,1 @@
-*
-!*.gitignore
-!*/
-
-!ttf/**/*
-!ttf-unhinted/**/*
-!woff2/**/*
-
-!shevska.css
-
-!private-build-plans.toml
+clone
