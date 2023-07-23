@@ -693,8 +693,11 @@ css = "expanded"
 
 
 # slopes {{{
-[buildPlans.shevska.slopes]
-upright = "normal"
+[buildPlans.shevska.slopes.upright]
+angle = 0.0
+shape = "upright"
+menu = "upright"
+css = "normal"
 #     oblique = "oblique"
 #     italic = "italic"
 # }}}
