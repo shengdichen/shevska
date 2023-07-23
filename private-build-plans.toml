@@ -4,14 +4,11 @@
 #   2.  build all (ttf, woff, css)
 #       $ npm run build -- contents::shevska
 
-
-# Shevska {{{
 [buildPlans.shevska]
 # name of the font-family
 family = "Shevska"
 spacing = "normal"
 serifs = "sans"
-
 
   # glyphs for the three different Slopes (Upright, Italic, Oblique) {{{
   [buildPlans.shevska.variants]
@@ -379,7 +376,6 @@ serifs = "sans"
     # }}}
     # }}}
 
-
     # symbols {{{
     # dev {{{
     ampersand = "upper-open"
@@ -441,7 +437,6 @@ serifs = "sans"
     # }}}
     # }}}
     # }}}
-
 
 # slanted {{{
 #           # italic {{{
@@ -585,7 +580,6 @@ serifs = "sans"
 # }}}
   # }}}
 
-
   # ligatures {{{
   [buildPlans.shevska.ligations]
   #     inherits = "default-calt"
@@ -597,7 +591,6 @@ serifs = "sans"
 
   disables = []
   # }}}
-
 
 # what to build {{{
 # weights {{{
@@ -648,7 +641,6 @@ serifs = "sans"
 #       css = 900
 # }}}
 
-
 [buildPlans.shevska.weights.regl]
 shape = 417
 menu = 417
@@ -659,7 +651,6 @@ shape = 741
 menu = 741
 css = 741
 # }}}
-
 
 # widths {{{
 # default widths {{{
@@ -691,7 +682,6 @@ menu = 7
 css = "expanded"
 # }}}
 
-
 # slopes {{{
 [buildPlans.shevska.slopes.upright]
 angle = 0.0
@@ -700,7 +690,6 @@ menu = "upright"
 css = "normal"
 #     oblique = "oblique"
 #     italic = "italic"
-# }}}
 # }}}
 # }}}
 
