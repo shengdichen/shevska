@@ -40,10 +40,16 @@ serifs = "sans"
 
     capital-c = "unilateral-inward-serifed"
 
-    capital-g = "toothless-corner-serifless-hookless"
-    capital-h = "standard"
     capital-e = "top-left-serifed"
     capital-f = "top-left-serifed"
+
+    # G {{{
+    #       capital-g = "toothless-corner-serifless-hookless"
+
+    # avoid similarity with C
+    capital-g = "toothless-corner-serifless-hooked"
+    # }}}
+    capital-h = "serifless"
     capital-i = "serifed"
 
     # J {{{
