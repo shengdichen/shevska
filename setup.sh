@@ -35,10 +35,16 @@ function transport_font() {
     unset font_dir
 }
 
+function build() {
+    cd "${clone_dir}"
+    npm run build -- contents::shevska
+}
+
 function main() {
     clone
     link
     transport_font
+    build
 }
 main
 
