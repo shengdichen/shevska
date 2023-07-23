@@ -259,8 +259,8 @@ css = 741
 
 [buildPlans.shevska.widths.exact_]
 shape = 576
-menu = 7
-css = "expanded"
+menu = 5
+css = "normal"
 
 [buildPlans.shevska.slopes.upright]
 angle = 0.0
