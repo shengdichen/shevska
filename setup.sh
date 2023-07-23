@@ -1,4 +1,5 @@
 clone_dir="clone"
+bin_dir="bin"
 out_dir="${clone_dir}/dist"
 
 function clone() {
@@ -14,13 +15,28 @@ function clone() {
 function link() {
     ln -srf "private-build-plans.toml" "${clone_dir}"
 
-    mkdir "${out_dir}"
-    ln -srf "bin" "${out_dir}/shevska"
+    mkdir -p "${out_dir}"
+    target_dir="${out_dir}/shevska"
+    if [ ! -d "${target_dir}" ]; then
+        ln -srf "${bin_dir}" "${target_dir}"
+    fi
+    unset target_dir
+}
+
+function transport_font() {
+    font_dir="${HOME}/.local/share/fonts/shevska"
+    mkdir -p "${font_dir}"
+
+    ln -sf "$(realpath ${bin_dir}/ttf)" "${font_dir}"
+    ln -sf "$(realpath ${bin_dir}/woff2)" "${font_dir}"
+
+    unset font_dir
 }
 
 function main() {
     clone
     link
+    transport_font
 }
 main
 
