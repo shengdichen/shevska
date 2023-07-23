@@ -232,7 +232,7 @@ enables = ["center-ops", "arrow", "arrow2", "trig", "eqeqeq", "eqeq", "ineq", "e
 disables = []
 # }}}
 
-# what to build {{{
+# build target {{{
 # weight {{{
 # NOTE:
 #   1. common aliases:
