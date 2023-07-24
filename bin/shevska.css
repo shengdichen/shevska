@@ -1,0 +1,18 @@
+
+@font-face {
+	font-family: 'Shevska Web';
+	font-display: swap;
+	font-weight: 417;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('ttf/shevska-exact_base.ttf') format('truetype'), url('woff2/shevska-exact_base.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Shevska Web';
+	font-display: swap;
+	font-weight: 741;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('ttf/shevska-exact_plus.ttf') format('truetype'), url('woff2/shevska-exact_plus.woff2') format('woff2');
+}
