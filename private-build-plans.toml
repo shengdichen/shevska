@@ -224,12 +224,8 @@ lig-double-arrow-bar = "with-notch"
 lig-single-arrow-bar = "with-notch"
 
 [buildPlans.shevska.ligations]
-#     inherits = "default-calt"
-
-#     # discretionary ligatures
-#     inherits = "dlig"
-
-enables = ["center-ops", "arrow", "arrow2", "trig", "eqeqeq", "eqeq", "ineq", "exeqeq", "exeqeq-dotted", "eqexeq", "eqexeq-dotted", "eqexeq-dl", "eqexeq-dl-dotted", "exeq", "exeq-dotted", "tildeeq", "eqslasheq", "slasheq", "ltgt-ne", "ltgt-diamond", "brst", "plusplus", "kern-dotty", "logic", "llgg", "llggeq", "dot-as-operator", "lteq-as-arrow", "gteq-as-co-arrow", "html-comment", "colon-greater-as-colon-arrow", "brace-bar", "brack-bar"]
+# discretionary
+inherits = "dlig"
 
 disables = []
 # }}}
