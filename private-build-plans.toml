@@ -34,6 +34,8 @@ capital-j = "descending-serifless"
 # curly with a light foot
 capital-k = "curly-bottom-right-serifed"
 
+capital-l = "motion-serifed"
+
 capital-m = "slanted-sides-hanging-motion-serifed"
 capital-n = "asymmetric-motion-serifed"
 
@@ -172,10 +174,8 @@ underscore = "low"
 ampersand = "upper-open"
 asterisk = "turn-penta-low"
 
-# ()
-paren = "normal"
-# {}
-brace = "curly-flat-boundary"
+paren = "normal"  # ()
+brace = "curly-flat-boundary"  # {}
 
 tilde = "low"
 
@@ -193,8 +193,7 @@ bar = "force-upright"
 
 at = "compact"
 question = "corner-flat-hooked"
-# backtick
-ascii-grave = "straight"
+ascii-grave = "straight"  # backtick
 
 # misc {{{
 cent = "open"
@@ -202,32 +201,20 @@ partial-derivative = "curly-bar"
 lower-eth = "straight-bar"
 micro-sign = "tailed-serifless"
 
-# paragraph-indicator
-pilcrow = "low"
+pilcrow = "low"  # paragraph-indicator
 # }}}
 # }}}
 
 # ligatures {{{
-# leq, geq
-lig-ltgteq = "flat"
-# !=
-lig-neq = "vertical-dotted"
-# ==
-lig-equal-chain = "with-notch"
-# --
-lig-hyphen-chain = "with-notch"
-# =>
-lig-double-arrow-bar = "with-notch"
-# ->
-lig-single-arrow-bar = "without-notch"
+lig-ltgteq = "flat"  # leq, geq
+lig-neq = "vertical-dotted"  # !=
+lig-equal-chain = "with-notch"  # ==
+lig-hyphen-chain = "with-notch"  # --
+lig-double-arrow-bar = "with-notch"  # =>
+lig-single-arrow-bar = "with-notch"  # ->
 
 [buildPlans.shevska.ligations]
-#     inherits = "default-calt"
-
-#     # discretionary ligatures
-#     inherits = "dlig"
-
-enables = ["center-ops", "arrow", "arrow2", "trig", "eqeqeq", "eqeq", "ineq", "exeqeq", "exeqeq-dotted", "eqexeq", "eqexeq-dotted", "eqexeq-dl", "eqexeq-dl-dotted", "exeq", "exeq-dotted", "tildeeq", "eqslasheq", "slasheq", "ltgt-ne", "ltgt-diamond", "brst", "plusplus", "kern-dotty", "logic", "llgg", "llggeq", "dot-as-operator", "lteq-as-arrow", "gteq-as-co-arrow", "html-comment", "colon-greater-as-colon-arrow", "brace-bar", "brack-bar"]
+inherits = "dlig"  # discretionary ligature
 
 disables = []
 # }}}
