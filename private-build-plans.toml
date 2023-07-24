@@ -174,10 +174,8 @@ underscore = "low"
 ampersand = "upper-open"
 asterisk = "turn-penta-low"
 
-# ()
-paren = "normal"
-# {}
-brace = "curly-flat-boundary"
+paren = "normal"  # ()
+brace = "curly-flat-boundary"  # {}
 
 tilde = "low"
 
@@ -195,8 +193,7 @@ bar = "force-upright"
 
 at = "compact"
 question = "corner-flat-hooked"
-# backtick
-ascii-grave = "straight"
+ascii-grave = "straight"  # backtick
 
 # misc {{{
 cent = "open"
@@ -204,28 +201,20 @@ partial-derivative = "curly-bar"
 lower-eth = "straight-bar"
 micro-sign = "tailed-serifless"
 
-# paragraph-indicator
-pilcrow = "low"
+pilcrow = "low"  # paragraph-indicator
 # }}}
 # }}}
 
 # ligatures {{{
-# leq, geq
-lig-ltgteq = "flat"
-# !=
-lig-neq = "vertical-dotted"
-# ==
-lig-equal-chain = "with-notch"
-# --
-lig-hyphen-chain = "with-notch"
-# =>
-lig-double-arrow-bar = "with-notch"
-# ->
-lig-single-arrow-bar = "with-notch"
+lig-ltgteq = "flat"  # leq, geq
+lig-neq = "vertical-dotted"  # !=
+lig-equal-chain = "with-notch"  # ==
+lig-hyphen-chain = "with-notch"  # --
+lig-double-arrow-bar = "with-notch"  # =>
+lig-single-arrow-bar = "with-notch"  # ->
 
 [buildPlans.shevska.ligations]
-# discretionary
-inherits = "dlig"
+inherits = "dlig"  # discretionary ligature
 
 disables = []
 # }}}
