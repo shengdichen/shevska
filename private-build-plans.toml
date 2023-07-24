@@ -258,7 +258,7 @@ css = 741
 # }}}
 
 [buildPlans.shevska.widths.exact_]
-shape = 576
+shape = 537  # anything within (500, 600) seems fine
 menu = 5
 css = "normal"
 
