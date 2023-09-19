@@ -7,12 +7,12 @@ function clone() {
         mkdir "${clone_dir}"
         git clone --depth 2 https://github.com/be5invis/Iosevka.git "${clone_dir}"
     fi
-
-    (cd "${clone_dir}" && npm install)
-    npm install -g "ttfautohint"
 }
 
-function link() {
+function setup() {
+    (cd "${clone_dir}" && npm install)
+    npm install -g "ttfautohint"
+
     ln -srf "private-build-plans.toml" "${clone_dir}"
 
     local out_dir="${clone_dir}/dist"
@@ -35,19 +35,19 @@ function build() {
     (cd "${clone_dir}" && npm run build -- contents::shevska)
 }
 
-function dev_setup() {
+function dev() {
     clone
-    link
+    setup
     install
 }
 
 function main() {
     case "$1" in
         "dev")
-            dev_setup
+            dev
             ;;
         "build")
-            dev_setup
+            dev
             build
             ;;
         *)
@@ -58,4 +58,4 @@ function main() {
 main "$@"
 
 unset clone_dir bin_dir bin_dir_abs
-unset main dev_setup build install link clone
+unset main dev build install setup clone
