@@ -5,7 +5,9 @@ bin_dir_abs="$(realpath ${bin_dir})"
 function clone() {
     if [ ! -d "${clone_dir}" ]; then
         mkdir "${clone_dir}"
-        git clone --depth 2 https://github.com/be5invis/Iosevka.git "${clone_dir}"
+        git clone --depth 1 https://github.com/be5invis/Iosevka.git "${clone_dir}"
+    else
+        (cd "${clone_dir}" && git pull --depth 1)
     fi
 }
 
