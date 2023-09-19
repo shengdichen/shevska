@@ -7,9 +7,7 @@ function clone() {
         git clone --depth 2 https://github.com/be5invis/Iosevka.git "${clone_dir}"
     fi
 
-    cd "${clone_dir}"
-    npm install
-    cd ..
+    (cd "${clone_dir}" && npm install)
 }
 
 function link() {
@@ -36,8 +34,7 @@ function transport_font() {
 }
 
 function build() {
-    cd "${clone_dir}"
-    npm run build -- contents::shevska
+    (cd "${clone_dir}" && npm run build -- contents::shevska)
 }
 
 function main() {
