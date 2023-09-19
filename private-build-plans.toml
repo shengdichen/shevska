@@ -108,8 +108,8 @@ z = "straight-serifless-with-crossbar"
 eszet = "traditional-descending-serifless"
 
 # Greek {{{
-# majuscule lambda & majuscule delta
-turn-v = "straight"
+capital-delta = "straight"
+capital-lambda = "straight-serifless"
 # minuscule lambda
 lower-lambda = "straight-turn"
 
