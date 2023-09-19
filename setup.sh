@@ -11,7 +11,10 @@ function clone() {
 
 function setup() {
     (cd "${clone_dir}" && npm install)
-    npm install -g "ttfautohint"
+    local package_ttfautohint="ttfautohint"
+    if ! npm list -g --depth=0 | grep "${package_ttfautohint}" 1>/dev/null 2>&1; then
+        npm install -g "${package_ttfautohint}"
+    fi
 
     ln -srf "private-build-plans.toml" "${clone_dir}"
 
