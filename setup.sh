@@ -58,3 +58,4 @@ function main() {
 main "$@"
 
 unset clone_dir bin_dir bin_dir_abs
+unset main dev_setup build install link clone
