@@ -9,6 +9,7 @@ function clone() {
     fi
 
     (cd "${clone_dir}" && npm install)
+    npm install -g "ttfautohint"
 }
 
 function link() {
