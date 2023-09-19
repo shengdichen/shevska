@@ -23,7 +23,7 @@ function link() {
     fi
 }
 
-function transport_font() {
+function install() {
     local font_dir="${HOME}/.local/share/fonts/shevska"
     mkdir -p "${font_dir}"
 
@@ -35,12 +35,26 @@ function build() {
     (cd "${clone_dir}" && npm run build -- contents::shevska)
 }
 
-function main() {
+function dev_setup() {
     clone
     link
-    transport_font
-    build
+    install
 }
-main
+
+function main() {
+    case "$1" in
+        "dev")
+            dev_setup
+            ;;
+        "build")
+            dev_setup
+            build
+            ;;
+        *)
+            install
+            ;;
+    esac
+}
+main "$@"
 
 unset clone_dir bin_dir bin_dir_abs
