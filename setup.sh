@@ -1,8 +1,10 @@
+#!/usr/bin/env dash
+
 clone_dir="clone"
 bin_dir="bin"
 bin_dir_abs="$(realpath ${bin_dir})"
 
-function clone() {
+clone() {
     if [ ! -d "${clone_dir}" ]; then
         mkdir "${clone_dir}"
         git clone --depth 1 https://github.com/be5invis/Iosevka.git "${clone_dir}"
@@ -11,7 +13,7 @@ function clone() {
     fi
 }
 
-function setup() {
+setup() {
     (cd "${clone_dir}" && npm install)
     local package_ttfautohint="ttfautohint"
     if ! npm list -g --depth=0 | grep "${package_ttfautohint}" 1>/dev/null 2>&1; then
@@ -28,7 +30,7 @@ function setup() {
     fi
 }
 
-function install() {
+install() {
     local font_dir="${HOME}/.local/share/fonts/shevska"
     mkdir -p "${font_dir}"
 
@@ -36,17 +38,17 @@ function install() {
     ln -sf "${bin_dir_abs}/woff2" "${font_dir}"
 }
 
-function build() {
+build() {
     (cd "${clone_dir}" && npm run build -- contents::shevska)
 }
 
-function dev() {
+dev() {
     clone
     setup
     install
 }
 
-function main() {
+main() {
     case "$1" in
         "dev")
             dev
@@ -63,4 +65,4 @@ function main() {
 main "$@"
 
 unset clone_dir bin_dir bin_dir_abs
-unset main dev build install setup clone
+unset -f main dev build install setup clone
