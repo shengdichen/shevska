@@ -1,68 +1,72 @@
 #!/usr/bin/env dash
 
-clone_dir="clone"
-bin_dir="bin"
-bin_dir_abs="$(realpath ${bin_dir})"
+SCRIPT_PATH="$(realpath "$(dirname "${0}")")"
+cd "${SCRIPT_PATH}" || exit 3
 
-clone() {
-    if [ ! -d "${clone_dir}" ]; then
-        mkdir "${clone_dir}"
-        git clone --depth 1 https://github.com/be5invis/Iosevka.git "${clone_dir}"
+CLONE_DIR="clone"
+BIN_DIR="bin"
+
+__clone_upstream() {
+    if [ ! -d "${CLONE_DIR}" ]; then
+        mkdir -p "${CLONE_DIR}"
+        git clone --depth 1 https://github.com/be5invis/Iosevka.git "${CLONE_DIR}"
     else
-        (cd "${clone_dir}" && git pull --depth 1)
+        (cd "${CLONE_DIR}" && git pull --depth 1)
     fi
 }
 
-setup() {
-    (cd "${clone_dir}" && npm install)
+__setup() {
+    (cd "${CLONE_DIR}" && npm install)
     local package_ttfautohint="ttfautohint"
-    if ! npm list -g --depth=0 | grep "${package_ttfautohint}" 1>/dev/null 2>&1; then
+    if ! npm list -g --depth=0 | grep "${package_ttfautohint}" >/dev/null 2>&1; then
         npm install -g "${package_ttfautohint}"
     fi
 
-    ln -srf "private-build-plans.toml" "${clone_dir}"
+    ln -srf "private-build-plans.toml" "${CLONE_DIR}"
 
-    local out_dir="${clone_dir}/dist"
+    local out_dir="${CLONE_DIR}/dist"
     mkdir -p "${out_dir}"
     local target_dir="${out_dir}/shevska"
     if [ ! -d "${target_dir}" ]; then
-        ln -srf "${bin_dir}" "${target_dir}"
+        ln -srf "${BIN_DIR}" "${target_dir}"
     fi
 }
 
-install() {
+link_fonts() {
     local font_dir="${HOME}/.local/share/fonts/shevska"
     mkdir -p "${font_dir}"
 
-    ln -sf "${bin_dir_abs}/ttf" "${font_dir}"
-    ln -sf "${bin_dir_abs}/woff2" "${font_dir}"
+    for ftype in "ttf" "woff2"; do
+        ln -sf "$(realpath ${BIN_DIR})/${ftype}" "${font_dir}"
+    done
+}
+
+build_setup() {
+    __clone_upstream
+    __setup
+    link_fonts
 }
 
 build() {
-    (cd "${clone_dir}" && npm run build -- contents::shevska)
-}
-
-dev() {
-    clone
-    setup
-    install
+    (cd "${CLONE_DIR}" && npm run build -- contents::shevska)
 }
 
 main() {
-    case "$1" in
+    case "${1}" in
         "dev")
-            dev
+            build_setup
             ;;
         "build")
-            dev
+            build_setup
             build
             ;;
         *)
-            install
+            link_fonts
             ;;
     esac
+
+    unset SCRIPT_PATH CLONE_DIR BIN_DIR
+    unset -f __clone_upstream __setup link_fonts build_setup build
 }
 main "$@"
-
-unset clone_dir bin_dir bin_dir_abs
-unset -f main dev build install setup clone
+unset -f main
